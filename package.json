@@ -1,6 +1,7 @@
 {
     "name": "one-o-eight",
     "displayName": "one-o-eight",
+    "publisher": "tpoi",
     "description": "Basic light/dark color theme",
     "version": "0.0.1",
     "engines": {
