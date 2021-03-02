@@ -1,0 +1,233 @@
+{
+    "name": "One O Eight Light",
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment"
+            ],
+            "settings": {
+                "foreground": "#919496",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Punctuation",
+            "scope": [
+                "punctuation.definition"
+            ],
+            "settings": {
+                "foreground": "#B9BBBC"
+            }
+        },
+        {
+            "name": "Types",
+            "scope": [
+                "support.type"
+            ],
+            "settings": {
+                "foreground": "#DA7431"
+            }
+        },
+        {
+            "name": "Macro",
+            "scope": [
+                "support.function.macro"
+            ],
+            "settings": {
+                "foreground": "#9E78C3"
+            }
+        },
+        {
+            "name": "Constant",
+            "scope": [
+                "constant"
+            ],
+            "settings": {
+                "foreground": "#1E824C"
+            }
+        },
+        {
+            "name": "Operator",
+            "scope": [
+                "keyword.operator"
+            ],
+            "settings": {
+                "foreground": "#919496"
+            }
+        },
+        {
+            "name": "Operator (boolean)",
+            "scope": [
+                "keyword.operator.boolean"
+            ],
+            "settings": {
+                "foreground": "#4F8EB8"
+            }
+        },
+        {
+            "name": "Brackets",
+            "scope": [
+                "meta.bracket"
+            ],
+            "settings": {
+                "foreground": "#A5A8A9"
+            }
+        },
+        {
+            "name": "String",
+            "scope": [
+                "string"
+            ],
+            "settings": {
+                "foreground": "#49996E"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword"
+            ],
+            "settings": {
+                "foreground": "#8859B6"
+            }
+        },
+        {
+            "name": "Interpolation",
+            "scope": [
+                "variable.interpolation"
+            ],
+            "settings": {
+                "foreground": "#DC143C"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": [
+                "entity.name.function"
+            ],
+            "settings": {
+                "foreground": "#2574A9",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Function in code",
+            "scope": [
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#2574A9"
+            }
+        },
+        {
+            "name": "TOML Section",
+            "scope": [
+                "entity.other.attribute-name.table.array.toml",
+                "entity.other.attribute-name.table.toml"
+            ],
+            "settings": {
+                "foreground": "#8859B6",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown title",
+            "scope": [
+                "markup.heading.markdown"
+            ],
+            "settings": {
+                "foreground": "#2574A9",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown fenced block language",
+            "scope": [
+                "fenced_code.block.language"
+            ],
+            "settings": {
+                "foreground": "#8859B6",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown link reference",
+            "scope": [
+                "string.other.link.title.markdown",
+                "string.other.link.description.markdown"
+            ],
+            "settings": {
+                "foreground": "#1E824C",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown link reference",
+            "scope": [
+                "constant.other.reference.link.markdown"
+            ],
+            "settings": {
+                "foreground": "#DA7431",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown actual link",
+            "scope": [
+                "markup.underline.link.markdown"
+            ],
+            "settings": {
+                "foreground": "#4F8EB8",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "name": "Markdown raw code",
+            "scope": [
+                "markup.inline.raw.string.markdown"
+            ],
+            "settings": {
+                "foreground": "#8859B6",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Markdown bold",
+            "scope": [
+                "markup.bold"
+            ],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown italic",
+            "scope": [
+                "markup.italic"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        }
+    ],
+    "colors": {
+        "editorLineNumber.foreground": "#CCCECF",
+        "activityBar.foreground": "#2574A9",
+        "editor.foreground": "#303436",
+        "statusBar.remoteForeground": "#DFE2E3",
+        "foreground": "#303436",
+        "editor.selectionBackground": "#B9BBBC66",
+        "editor.lineHighlightBorder": "#F3F5F6",
+        "editorCursor.foreground": "#D35400",
+        "icon.foreground": "#2574A9",
+        "statusBar.foreground": "#4F8EB8",
+        "editorLineNumber.activeForeground": "#A5A8A9",
+        "editor.background": "#F3F5F6",
+        "statusBar.remoteBackground": "#4F8EB8",
+        "activityBar.background": "#CCCECF",
+        "statusBar.background": "#DFE2E3",
+        "sideBar.background": "#DFE2E3"
+    },
+    "type": "light"
+}
