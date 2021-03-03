@@ -13,7 +13,14 @@ for file in ["default-light", "default-dark"]
     bg = parse(Colorant, theme["background"])
 
     # Structure gradient
-    gradient = range(bg, weighted_color_mean(0.6, fg, bg), length=7)
+    gr = range(bg, fg, length=7)[2:6]
+
+    # UI gradient
+    ui_w = theme["type"] == "light" ? 0.2 : 1.8
+    ui_endpoint = convert(HSL, bg)
+    ui_endpoint = convert(RGB, HSL(ui_endpoint.h, ui_endpoint.s, ui_w * ui_endpoint.l))
+    ui = range(bg, convert(typeof(bg), ui_endpoint), length=6)[2:6]
+    #(theme["type"] == "dark") && reverse!(ui)
 
     # Main colors
     c1 = parse(Colorant, theme["c1"])
@@ -33,7 +40,9 @@ for file in ["default-light", "default-dark"]
     # Theme
     all_colors = [
         c1 c2 c3 c4 c5;
-        s1 s2 s3 s4 s5
+        s1 s2 s3 s4 s5;
+        gr[1] gr[2] gr[3] gr[4] gr[5];
+        ui[1] ui[2] ui[3] ui[4] ui[5];
         ]
 
     # Theme dictionary
@@ -54,9 +63,9 @@ for file in ["default-light", "default-dark"]
         "s5" => "#$(hex(s5))"
     )
 
-    gr = gradient[2:6]
     for i in eachindex(gr)
         td["g$(i)"] = "#$(hex(gr[i]))"
+        td["u$(i)"] = "#$(hex(ui[i]))"
     end
 
     theme_json = JSON.parse(render(template, td))
