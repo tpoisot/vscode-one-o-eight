@@ -12,14 +12,21 @@ template = mt"""
         "editorLineNumber.activeForeground": "{{g4}}",
         "editorCursor.foreground": "{{c4}}",
         "foreground": "{{foreground}}",
-        "icon.foreground": "{{c2}}",
+        "icon.foreground": "{{g5}}",
         "activityBar.background": "{{g2}}",
-        "activityBar.foreground": "{{c2}}",
-        "statusBar.background": "{{g1}}",
-        "statusBar.foreground": "{{s2}}",
-        "statusBar.remoteBackground": "{{s2}}",
+        "statusBar.background": "{{g2}}",
+        "sideBar.background": "{{g1}}",
+        "statusBar.remoteBackground": "{{s1}}",
+        "sideBar.border": "{{g2}}",
         "statusBar.remoteForeground": "{{g1}}",
-        "sideBar.background": "{{g1}}"
+        "activityBar.foreground": "{{g5}}",
+        "statusBar.foreground": "{{g5}}",
+        "titleBar.activeBackground": "{{g2}}",
+        "editorGroup.border": "{{g2}}",
+        "editorGroupHeader.tabsBackground": "{{g2}}",
+        "tab.unfocusedActiveBackground": "{{background}}",
+        "tab.inactiveBackground": "{{g1}}",
+        "tab.border": "{{g2}}"
 	},
 	"tokenColors": [
 		{
@@ -43,7 +50,7 @@ template = mt"""
                 "support.type"
             ],
             "settings": {
-                "foreground": "{{s4}}"
+                "foreground": "{{c4}}"
             }
         },
         {
@@ -52,7 +59,8 @@ template = mt"""
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "{{s1}}"
+                "foreground": "{{s4}}",
+                "fontStyle": "italic"
             }
         },
         {
@@ -61,7 +69,26 @@ template = mt"""
                 "constant"
             ],
             "settings": {
+                "foreground": "{{c5}}"
+            }
+        },
+        {
+            "name": "Constant (numeric)",
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
                 "foreground": "{{c3}}"
+            }
+        },
+        {
+            "name": "Constant (escape char)",
+            "scope": [
+                "constant.character.escape"
+            ],
+            "settings": {
+                "foreground": "{{g5}}",
+                "fontStyle": "bold italic"
             }
         },
         {
@@ -115,7 +142,7 @@ template = mt"""
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "{{c5}}"
+                "foreground": "{{s1}}"
             }
         },
         {
