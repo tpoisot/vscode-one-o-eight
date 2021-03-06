@@ -4,7 +4,7 @@ using Mustache
 
 include("template.jl")
 
-for file in ["default-light", "default-dark"]
+for file in [replace(t, ".json" => "") for t in readdir("themes")]
 
     theme = JSON.parsefile("themes/$(file).json")
 
@@ -24,10 +24,11 @@ for file in ["default-light", "default-dark"]
 
     # Main colors
     c1 = parse(Colorant, theme["c1"])
-    c2 = parse(Colorant, theme["c2"])
     c3 = parse(Colorant, theme["c3"])
-    c4 = parse(Colorant, theme["c4"])
     c5 = parse(Colorant, theme["c5"])
+    # If themes only specify the odd colors, the even ones are considered to be their midpoints
+    c2 = haskey(theme, "c2") ? parse(Colorant, theme["c2"]) : weighted_color_mean(0.5, c1, c3)
+    c4 = haskey(theme, "c4") ? parse(Colorant, theme["c3"]) : weighted_color_mean(0.5, c2, c5)
 
     # Subtle colors
     w = 0.8

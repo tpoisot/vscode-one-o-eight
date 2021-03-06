@@ -1,5 +1,5 @@
 {
-    "name": "One O Eight Dark",
+    "name": "One O Eight Calm",
     "tokenColors": [
         {
             "name": "Comments",
@@ -7,7 +7,7 @@
                 "comment"
             ],
             "settings": {
-                "foreground": "#D2D1D1",
+                "foreground": "#4F5058",
                 "fontStyle": "italic"
             }
         },
@@ -17,7 +17,7 @@
                 "punctuation.definition"
             ],
             "settings": {
-                "foreground": "#919093"
+                "foreground": "#929397"
             }
         },
         {
@@ -26,7 +26,7 @@
                 "support.type"
             ],
             "settings": {
-                "foreground": "#F9BF3B"
+                "foreground": "#555366"
             }
         },
         {
@@ -35,7 +35,7 @@
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "#D0A23A",
+                "foreground": "#757383",
                 "fontStyle": "italic"
             }
         },
@@ -45,7 +45,7 @@
                 "constant"
             ],
             "settings": {
-                "foreground": "#FF6347"
+                "foreground": "#8C2D5B"
             }
         },
         {
@@ -54,7 +54,7 @@
                 "constant.numeric"
             ],
             "settings": {
-                "foreground": "#90EE90"
+                "foreground": "#1F7D45"
             }
         },
         {
@@ -63,7 +63,7 @@
                 "constant.character.escape"
             ],
             "settings": {
-                "foreground": "#D2D1D1",
+                "foreground": "#4F5058",
                 "fontStyle": "bold italic"
             }
         },
@@ -73,7 +73,7 @@
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "#D2D1D1"
+                "foreground": "#4F5058"
             }
         },
         {
@@ -82,7 +82,7 @@
                 "keyword.operator.boolean"
             ],
             "settings": {
-                "foreground": "#5092C1"
+                "foreground": "#49938B"
             }
         },
         {
@@ -91,7 +91,7 @@
                 "meta.bracket"
             ],
             "settings": {
-                "foreground": "#B1B1B2"
+                "foreground": "#717177"
             }
         },
         {
@@ -100,7 +100,7 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#7CC77E"
+                "foreground": "#4A9568"
             }
         },
         {
@@ -109,7 +109,7 @@
                 "keyword"
             ],
             "settings": {
-                "foreground": "#DDA0DD"
+                "foreground": "#1D789D"
             }
         },
         {
@@ -118,7 +118,7 @@
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "#BA89BC"
+                "foreground": "#4891AF"
             }
         },
         {
@@ -127,7 +127,7 @@
                 "entity.name.function"
             ],
             "settings": {
-                "foreground": "#59ABE3",
+                "foreground": "#1E7A71",
                 "fontStyle": "italic"
             }
         },
@@ -137,7 +137,7 @@
                 "support.function"
             ],
             "settings": {
-                "foreground": "#59ABE3"
+                "foreground": "#1E7A71"
             }
         },
         {
@@ -147,8 +147,28 @@
                 "entity.other.attribute-name.table.toml"
             ],
             "settings": {
-                "foreground": "#DDA0DD",
+                "foreground": "#1D789D",
                 "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Name tag entity",
+            "scope": [
+                "entity.name.tag"
+            ],
+            "settings": {
+                "foreground": "#1D789D",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Quoted YAML string",
+            "scope": [
+                "string.quoted.single.yaml",
+                "string.quoted.double.yaml"
+            ],
+            "settings": {
+                "foreground": "#1E7A71"
             }
         },
         {
@@ -157,7 +177,7 @@
                 "markup.heading.markdown"
             ],
             "settings": {
-                "foreground": "#59ABE3",
+                "foreground": "#1E7A71",
                 "fontStyle": "bold"
             }
         },
@@ -167,7 +187,7 @@
                 "fenced_code.block.language"
             ],
             "settings": {
-                "foreground": "#DDA0DD",
+                "foreground": "#1D789D",
                 "fontStyle": "italic"
             }
         },
@@ -178,7 +198,7 @@
                 "string.other.link.description.markdown"
             ],
             "settings": {
-                "foreground": "#90EE90",
+                "foreground": "#1F7D45",
                 "fontStyle": "bold"
             }
         },
@@ -188,7 +208,7 @@
                 "constant.other.reference.link.markdown"
             ],
             "settings": {
-                "foreground": "#D0A23A",
+                "foreground": "#757383",
                 "fontStyle": "italic"
             }
         },
@@ -198,7 +218,7 @@
                 "markup.underline.link.markdown"
             ],
             "settings": {
-                "foreground": "#5092C1",
+                "foreground": "#49938B",
                 "fontStyle": "underline"
             }
         },
@@ -208,7 +228,7 @@
                 "markup.inline.raw.string.markdown"
             ],
             "settings": {
-                "foreground": "#DDA0DD",
+                "foreground": "#1D789D",
                 "fontStyle": ""
             }
         },
@@ -232,30 +252,30 @@
         }
     ],
     "colors": {
-        "tab.unfocusedActiveBackground": "#2F2F38",
-        "tab.inactiveBackground": "#3E3E4A",
-        "tab.border": "#373741",
-        "editorLineNumber.foreground": "#706F75",
-        "activityBar.foreground": "#D2D1D1",
-        "editor.foreground": "#F2F1EF",
-        "statusBar.remoteForeground": "#505057",
-        "foreground": "#F2F1EF",
-        "editor.selectionBackground": "#91909366",
-        "editor.lineHighlightBorder": "#2F2F38",
-        "editorCursor.foreground": "#F9BF3B",
-        "editorGroupHeader.tabsBackground": "#373741",
-        "icon.foreground": "#D2D1D1",
-        "statusBar.foreground": "#F2F1EF",
-        "titleBar.activeBackground": "#373741",
-        "editorLineNumber.activeForeground": "#B1B1B2",
-        "editor.background": "#2F2F38",
-        "titleBar.inactiveBackground": "#373741",
-        "statusBar.remoteBackground": "#BA89BC",
-        "activityBar.background": "#373741",
-        "editorGroup.border": "#373741",
-        "statusBar.background": "#373741",
-        "sideBar.background": "#373741",
-        "sideBar.border": "#373741"
+        "tab.unfocusedActiveBackground": "#F5F7F6",
+        "tab.inactiveBackground": "#A5AAA8",
+        "tab.border": "#CDD1CF",
+        "editorLineNumber.foreground": "#B3B5B7",
+        "activityBar.foreground": "#4F5058",
+        "editor.foreground": "#2F2F38",
+        "statusBar.remoteForeground": "#D4D5D6",
+        "foreground": "#2F2F38",
+        "editor.selectionBackground": "#92939766",
+        "editor.lineHighlightBorder": "#F5F7F6",
+        "editorCursor.foreground": "#555366",
+        "editorGroupHeader.tabsBackground": "#CDD1CF",
+        "icon.foreground": "#4F5058",
+        "statusBar.foreground": "#2F2F38",
+        "titleBar.activeBackground": "#CDD1CF",
+        "editorLineNumber.activeForeground": "#717177",
+        "editor.background": "#F5F7F6",
+        "titleBar.inactiveBackground": "#CDD1CF",
+        "statusBar.remoteBackground": "#4891AF",
+        "activityBar.background": "#CDD1CF",
+        "editorGroup.border": "#CDD1CF",
+        "statusBar.background": "#CDD1CF",
+        "sideBar.background": "#CDD1CF",
+        "sideBar.border": "#CDD1CF"
     },
-    "type": "dark"
+    "type": "light"
 }
