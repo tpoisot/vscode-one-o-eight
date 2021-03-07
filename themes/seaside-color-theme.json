@@ -26,7 +26,7 @@
                 "support.type"
             ],
             "settings": {
-                "foreground": "#D79C65"
+                "foreground": "#3FA382"
             }
         },
         {
@@ -35,7 +35,7 @@
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "#DDAE82",
+                "foreground": "#63B399",
                 "fontStyle": "italic"
             }
         },
@@ -208,7 +208,7 @@
                 "constant.other.reference.link.markdown"
             ],
             "settings": {
-                "foreground": "#DDAE82",
+                "foreground": "#63B399",
                 "fontStyle": "italic"
             }
         },
@@ -262,7 +262,7 @@
         "foreground": "#2F2F38",
         "editor.selectionBackground": "#92939766",
         "editor.lineHighlightBorder": "#F5F7F6",
-        "editorCursor.foreground": "#D79C65",
+        "editorCursor.foreground": "#3FA382",
         "editorGroupHeader.tabsBackground": "#CDD1CF",
         "icon.foreground": "#4F5058",
         "statusBar.foreground": "#2F2F38",

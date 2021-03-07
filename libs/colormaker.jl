@@ -28,7 +28,7 @@ for file in [replace(t, ".json" => "") for t in readdir("themes")]
     c5 = parse(Colorant, theme["c5"])
     # If themes only specify the odd colors, the even ones are considered to be their midpoints
     c2 = haskey(theme, "c2") ? parse(Colorant, theme["c2"]) : weighted_color_mean(0.5, c1, c3)
-    c4 = haskey(theme, "c4") ? parse(Colorant, theme["c3"]) : weighted_color_mean(0.5, c2, c5)
+    c4 = haskey(theme, "c4") ? parse(Colorant, theme["c4"]) : weighted_color_mean(0.5, c2, c5)
 
     # Subtle colors
     w = 0.8
