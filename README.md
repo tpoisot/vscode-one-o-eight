@@ -1,5 +1,13 @@
 # One o Eight
 
+Fully supported languages:
+
+- Julia
+- Markdown
+- TOML, YAML
+- Notebooks
+- diff
+
 | Theme   | background | AA contrast | main colors                      |
 | ------- | ---------- | :---------: | -------------------------------- |
 | Light   | light      |      ✔️      | purple, blue, green, orange, red |

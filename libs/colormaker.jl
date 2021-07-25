@@ -16,7 +16,7 @@ for file in [replace(t, ".json" => "") for t in readdir("themes")]
     gr = range(bg, fg, length=7)[2:6]
 
     # UI gradient
-    ui_w = theme["type"] == "light" ? 0.2 : 1.8
+    ui_w = theme["type"] == "light" ? 0.55 : 1.8
     ui_endpoint = convert(HSL, bg)
     ui_endpoint = convert(RGB, HSL(ui_endpoint.h, ui_endpoint.s, ui_w * ui_endpoint.l))
     ui = range(bg, convert(typeof(bg), ui_endpoint), length=6)[2:6]

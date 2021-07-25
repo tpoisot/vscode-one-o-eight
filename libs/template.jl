@@ -16,9 +16,8 @@ template = mt"""
         "icon.foreground": "{{g5}}",
         "activityBar.background": "{{u1}}",
         "sideBar.background": "{{u1}}",
-        "statusBar.remoteBackground": "{{s1}}",
+        "sideBar.dropBackground": "{{s1}}",
         "sideBar.border": "{{u1}}",
-        "statusBar.remoteForeground": "{{g1}}",
         "activityBar.foreground": "{{g5}}",
         "statusBar.background": "{{u1}}",
         "statusBar.foreground": "{{foreground}}",
@@ -28,7 +27,26 @@ template = mt"""
         "editorGroupHeader.tabsBackground": "{{u1}}",
         "tab.unfocusedActiveBackground": "{{background}}",
         "tab.inactiveBackground": "{{u2}}",
-        "tab.border": "{{u1}}"
+        "tab.border": "{{u1}}",
+        "tab.activeBorderTop": "{{s1}}",
+        "editorGutter.modifiedBackground": "{{s2}}",
+        "editorGutter.addedBackground": "{{s3}}",
+        "editorGutter.deletedBackground": "{{s5}}",
+        "diffEditor.insertedTextBackground": "{{s2}}22",
+        "diffEditor.removedTextBackground": "{{s4}}22",
+        "diffEditor.diagonalFill": "{{g2}}44",
+        "gitDecoration.addedResourceForeground": "{{c3}}",
+        "gitDecoration.modifiedResourceForeground": "{{c2}}",
+        "gitDecoration.deletedResourceForeground": "{{c5}}",
+        "gitDecoration.untrackedResourceForeground": "{{c1}}",
+        "gitDecoration.ignoredResourceForeground": "{{g3}}",
+        "notebook.focusedEditorBorder": "{{c1}}",
+        "notebookStatusErrorIcon.foreground": "{{s5}}",
+        "notebookStatusSuccessIcon.foreground": "{{s3}}",
+        "notebookStatusRunningIcon.foreground": "{{s2}}",
+        "notebook.focusedCellBackground": "{{u1}}",
+        "notebook.focusedCellBorder": "{{u1}}",
+        "notebook.cellHoverBackground": "{{u1}}55"
 	},
 	"tokenColors": [
 		{
@@ -273,6 +291,16 @@ template = mt"""
             ],
             "settings": {
                 "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown citation",
+            "scope": [
+                "string.other.link.description.markdown.citation"
+            ],
+            "settings": {
+                "foreground": "{{g5}}",
+                "fontStyle": "underline"
             }
         }
 	]

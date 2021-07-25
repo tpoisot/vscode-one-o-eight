@@ -248,34 +248,62 @@
             "settings": {
                 "fontStyle": "italic"
             }
+        },
+        {
+            "name": "Markdown citation",
+            "scope": [
+                "string.other.link.description.markdown.citation"
+            ],
+            "settings": {
+                "foreground": "#D2D1D1",
+                "fontStyle": "underline"
+            }
         }
     ],
     "colors": {
-        "list.highlightForeground": "#F2F1EF",
+        "gitDecoration.ignoredResourceForeground": "#919093",
         "tab.unfocusedActiveBackground": "#2F2F38",
         "tab.inactiveBackground": "#3E3E4A",
+        "notebookStatusErrorIcon.foreground": "#D55844",
         "tab.border": "#373741",
-        "editorLineNumber.foreground": "#706F75",
-        "activityBar.foreground": "#D2D1D1",
         "editor.foreground": "#F2F1EF",
-        "statusBar.remoteForeground": "#505057",
-        "foreground": "#F2F1EF",
-        "editor.selectionBackground": "#91909366",
-        "editor.lineHighlightBorder": "#2F2F38",
-        "editorCursor.foreground": "#F9BF3B",
+        "notebook.focusedCellBorder": "#373741",
         "editorGroupHeader.tabsBackground": "#373741",
+        "editorGutter.modifiedBackground": "#5092C1",
         "icon.foreground": "#D2D1D1",
-        "statusBar.foreground": "#F2F1EF",
-        "titleBar.activeBackground": "#373741",
-        "editorLineNumber.activeForeground": "#B1B1B2",
         "editor.background": "#2F2F38",
+        "diffEditor.diagonalFill": "#706F7544",
+        "statusBar.background": "#373741",
+        "gitDecoration.untrackedResourceForeground": "#DDA0DD",
+        "activityBar.foreground": "#D2D1D1",
+        "gitDecoration.addedResourceForeground": "#90EE90",
+        "editor.selectionBackground": "#91909366",
+        "editorGutter.addedBackground": "#7CC77E",
+        "editor.lineHighlightBorder": "#2F2F38",
+        "notebookStatusSuccessIcon.foreground": "#7CC77E",
+        "editorGutter.deletedBackground": "#D55844",
+        "titleBar.activeBackground": "#373741",
+        "sideBar.border": "#373741",
+        "notebook.cellHoverBackground": "#37374155",
+        "gitDecoration.modifiedResourceForeground": "#59ABE3",
+        "editorLineNumber.foreground": "#706F75",
+        "foreground": "#F2F1EF",
+        "notebook.focusedEditorBorder": "#DDA0DD",
+        "editorCursor.foreground": "#F9BF3B",
+        "sideBar.background": "#373741",
+        "notebookStatusRunningIcon.foreground": "#5092C1",
+        "list.highlightForeground": "#F2F1EF",
+        "tab.activeBorderTop": "#BA89BC",
+        "notebook.focusedCellBackground": "#373741",
+        "sideBar.dropBackground": "#BA89BC",
+        "statusBar.foreground": "#F2F1EF",
+        "editorLineNumber.activeForeground": "#B1B1B2",
+        "diffEditor.removedTextBackground": "#D0A23A22",
         "titleBar.inactiveBackground": "#373741",
-        "statusBar.remoteBackground": "#BA89BC",
+        "diffEditor.insertedTextBackground": "#5092C122",
         "activityBar.background": "#373741",
         "editorGroup.border": "#373741",
-        "statusBar.background": "#373741",
-        "sideBar.background": "#373741",
-        "sideBar.border": "#373741"
+        "gitDecoration.deletedResourceForeground": "#FF6347"
     },
     "type": "dark"
 }
