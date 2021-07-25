@@ -12,6 +12,7 @@ template = mt"""
         "editorLineNumber.activeForeground": "{{g4}}",
         "editorCursor.foreground": "{{c4}}",
         "foreground": "{{foreground}}",
+        "list.highlightForeground": "{{foreground}}",
         "icon.foreground": "{{g5}}",
         "activityBar.background": "{{u1}}",
         "sideBar.background": "{{u1}}",
@@ -34,7 +35,6 @@ template = mt"""
 			"name": "Comments",
 			"scope": ["comment"],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "{{g5}}"
 			}
 		},

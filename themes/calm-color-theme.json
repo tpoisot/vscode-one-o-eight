@@ -7,8 +7,7 @@
                 "comment"
             ],
             "settings": {
-                "foreground": "#4F5058",
-                "fontStyle": "italic"
+                "foreground": "#4F5058"
             }
         },
         {
@@ -252,6 +251,7 @@
         }
     ],
     "colors": {
+        "list.highlightForeground": "#2F2F38",
         "tab.unfocusedActiveBackground": "#F5F7F6",
         "tab.inactiveBackground": "#A5AAA8",
         "tab.border": "#CDD1CF",
