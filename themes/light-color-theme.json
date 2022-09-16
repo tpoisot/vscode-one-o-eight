@@ -7,7 +7,7 @@
                 "comment"
             ],
             "settings": {
-                "foreground": "#505050"
+                "foreground": "#626262"
             }
         },
         {
@@ -62,7 +62,7 @@
                 "constant.character.escape"
             ],
             "settings": {
-                "foreground": "#505050",
+                "foreground": "#626262",
                 "fontStyle": "bold italic"
             }
         },
@@ -72,7 +72,7 @@
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "#505050"
+                "foreground": "#626262"
             }
         },
         {
@@ -90,7 +90,7 @@
                 "meta.bracket"
             ],
             "settings": {
-                "foreground": "#737373"
+                "foreground": "#7B7B7B"
             }
         },
         {
@@ -255,7 +255,7 @@
                 "string.other.link.description.markdown.citation"
             ],
             "settings": {
-                "foreground": "#505050",
+                "foreground": "#626262",
                 "fontStyle": "underline"
             }
         }
@@ -263,46 +263,46 @@
     "colors": {
         "gitDecoration.ignoredResourceForeground": "#959595",
         "tab.unfocusedActiveBackground": "#FBFBFB",
-        "tab.inactiveBackground": "#CECECE",
+        "tab.inactiveBackground": "#D3D3D3",
         "notebookStatusErrorIcon.foreground": "#E24262",
-        "tab.border": "#E5E5E5",
+        "tab.border": "#E7E7E7",
         "editor.foreground": "#2F2F2F",
-        "notebook.focusedCellBorder": "#E5E5E5",
-        "editorGroupHeader.tabsBackground": "#E5E5E5",
+        "notebook.focusedCellBorder": "#E7E7E7",
+        "editorGroupHeader.tabsBackground": "#E7E7E7",
         "editorGutter.modifiedBackground": "#508FB9",
-        "icon.foreground": "#505050",
+        "icon.foreground": "#626262",
         "editor.background": "#FBFBFB",
-        "diffEditor.diagonalFill": "#B7B7B744",
-        "statusBar.background": "#E5E5E5",
+        "diffEditor.diagonalFill": "#AFAFAF44",
+        "statusBar.background": "#E7E7E7",
         "gitDecoration.untrackedResourceForeground": "#8859B6",
-        "activityBar.foreground": "#505050",
+        "activityBar.foreground": "#626262",
         "gitDecoration.addedResourceForeground": "#1E824C",
         "editor.selectionBackground": "#95959566",
         "editorGutter.addedBackground": "#4A9A6F",
         "editor.lineHighlightBorder": "#FBFBFB",
         "notebookStatusSuccessIcon.foreground": "#4A9A6F",
         "editorGutter.deletedBackground": "#E24262",
-        "titleBar.activeBackground": "#E5E5E5",
-        "sideBar.border": "#E5E5E5",
-        "notebook.cellHoverBackground": "#E5E5E555",
+        "titleBar.activeBackground": "#E7E7E7",
+        "sideBar.border": "#E7E7E7",
+        "notebook.cellHoverBackground": "#E7E7E755",
         "gitDecoration.modifiedResourceForeground": "#2574A9",
-        "editorLineNumber.foreground": "#B7B7B7",
+        "editorLineNumber.foreground": "#AFAFAF",
         "foreground": "#2F2F2F",
         "notebook.focusedEditorBorder": "#8859B6",
         "editorCursor.foreground": "#D35400",
-        "sideBar.background": "#E5E5E5",
+        "sideBar.background": "#E7E7E7",
         "notebookStatusRunningIcon.foreground": "#508FB9",
         "list.highlightForeground": "#2F2F2F",
         "tab.activeBorderTop": "#9F79C4",
-        "notebook.focusedCellBackground": "#E5E5E5",
+        "notebook.focusedCellBackground": "#E7E7E7",
         "sideBar.dropBackground": "#9F79C4",
         "statusBar.foreground": "#2F2F2F",
-        "editorLineNumber.activeForeground": "#737373",
+        "editorLineNumber.activeForeground": "#7B7B7B",
         "diffEditor.removedTextBackground": "#DB753222",
-        "titleBar.inactiveBackground": "#E5E5E5",
+        "titleBar.inactiveBackground": "#E7E7E7",
         "diffEditor.insertedTextBackground": "#508FB922",
-        "activityBar.background": "#E5E5E5",
-        "editorGroup.border": "#E5E5E5",
+        "activityBar.background": "#E7E7E7",
+        "editorGroup.border": "#E7E7E7",
         "gitDecoration.deletedResourceForeground": "#DC143C"
     },
     "type": "light"
