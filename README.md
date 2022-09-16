@@ -1,19 +1,23 @@
 # One o Eight
 
-Fully supported languages:
+| Theme   | background |  main colors                      |
+| ------- | ---------- |  -------------------------------- |
+| Light   | light      |  purple, blue, green, orange, red |
+| Dark    | dark       |  purple, blue, green, orange, red |
+| Calm    | light      |  purple, blue, green              |
+| Forest  | light      |  brown, green                     |
+| Seaside | light      |  blue, teal, sand                 |
 
-- Julia
-- Markdown
-- TOML, YAML
-- Notebooks
-- diff
+Note that all main colors in all schemes have a contrast of at least 7:1 to their background, corresponding to an AAA accessibility contrast. This doesn't mean that the colors have strong differences from one another (most do), but that the contrast between the colors and the background is sufficient (and relatively homogeneous).
 
-| Theme   | background | AA contrast | main colors                      |
-| ------- | ---------- | :---------: | -------------------------------- |
-| Light   | light      |      ✔️      | purple, blue, green, orange, red |
-| Dark    | dark       |      ✔️      | purple, blue, green, orange, red |
-| Calm    | light      |             | purple, blue, green              |
-| Forest  | light      |             | brown, green                     |
-| Seaside | light      |             | blue, teal, sand                 |
+## Overview of the themes
 
-*Note:* the "AA contrast" columns refers to the fact that the five main colors have a contrast of at least 4.5:1, assuming that the font size in the text editor is going to be small. At 3:1, *i.e.* for larger font sizes or bold fonts, all colors in all themes have AA contrast (with the exception of the clear sand color in *Seaside* at 2.98).
+![](cards/light.png)
+
+![](cards/dark.png)
+
+![](cards/calm.png)
+
+![](cards/forest.png)
+
+![](cards/seaside.png)
