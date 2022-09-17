@@ -6,17 +6,17 @@ template = mt"""
 	"colors": {
 		"editor.background": "{{background}}",
 		"editor.foreground": "{{foreground}}",
-        "editor.selectionBackground": "{{u1}}66",
+        "editor.selectionBackground": "{{u2}}66",
         "editor.lineHighlightBorder": "{{background}}",
-        "editorLineNumber.foreground": "{{u1}}",
-        "editorLineNumber.activeForeground": "{{u3}}",
+        "editorLineNumber.foreground": "{{u2}}",
+        "editorLineNumber.activeForeground": "{{u5}}",
         "editorCursor.foreground": "{{u5}}",
         "foreground": "{{foreground}}",
         "list.highlightForeground": "{{foreground}}",
         "icon.foreground": "{{foreground}}",
         "activityBar.background": "{{u1}}",
-        "activityBar.foreground": "{{s2}}",
-        "activityBar.inactiveForeground": "{{u4}}",
+        "activityBar.foreground": "{{foreground}}",
+        "activityBar.inactiveForeground": "{{u5}}",
         "sideBar.background": "{{u1}}",
         "sideBar.dropBackground": "{{s2}}",
         "sideBar.border": "{{u1}}",
@@ -303,7 +303,7 @@ template = mt"""
             "name": "Punctuation",
             "scope": ["punctuation.definition"],
             "settings": {
-                "foreground": "{{g3}}"
+                "foreground": "{{g1}}"
             }
         }
 	]
