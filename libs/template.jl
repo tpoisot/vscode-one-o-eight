@@ -18,7 +18,7 @@ template = mt"""
         "sideBar.background": "{{u1}}",
         "sideBar.dropBackground": "{{s1}}",
         "sideBar.border": "{{u1}}",
-        "activityBar.foreground": "{{g5}}",
+        "activityBar.foreground": "{{u5}}",
         "statusBar.background": "{{u1}}",
         "statusBar.foreground": "{{foreground}}",
         "titleBar.activeBackground": "{{u1}}",
@@ -39,7 +39,7 @@ template = mt"""
         "gitDecoration.modifiedResourceForeground": "{{c2}}",
         "gitDecoration.deletedResourceForeground": "{{c5}}",
         "gitDecoration.untrackedResourceForeground": "{{c1}}",
-        "gitDecoration.ignoredResourceForeground": "{{g3}}",
+        "gitDecoration.ignoredResourceForeground": "{{u3}}",
         "notebook.focusedEditorBorder": "{{c1}}",
         "notebookStatusErrorIcon.foreground": "{{s5}}",
         "notebookStatusSuccessIcon.foreground": "{{s3}}",
@@ -53,7 +53,7 @@ template = mt"""
 			"name": "Comments",
 			"scope": ["comment"],
 			"settings": {
-				"foreground": "{{g5}}"
+				"foreground": "{{g2}}"
 			}
 		},
         {
@@ -106,7 +106,7 @@ template = mt"""
                 "constant.character.escape"
             ],
             "settings": {
-                "foreground": "{{g5}}",
+                "foreground": "{{g3}}",
                 "fontStyle": "bold italic"
             }
         },
@@ -116,7 +116,7 @@ template = mt"""
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "{{g5}}"
+                "foreground": "{{g3}}"
             }
         },
         {
@@ -134,7 +134,7 @@ template = mt"""
                 "meta.bracket"
             ],
             "settings": {
-                "foreground": "{{g4}}"
+                "foreground": "{{g2}}"
             }
         },
         {
@@ -299,7 +299,7 @@ template = mt"""
                 "string.other.link.description.markdown.citation"
             ],
             "settings": {
-                "foreground": "{{g5}}",
+                "foreground": "{{g3}}",
                 "fontStyle": "underline"
             }
         }

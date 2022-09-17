@@ -25,7 +25,7 @@ for theme_file in theme_files
     bg = parse(Colorant, theme["background"])
 
     # Structure gradient
-    gr = range(bg, fg, length=15)[10:14]
+    gr = range(bg, fg, length=7)[4:1:6]
 
     # UI gradient
     ui_w = theme["type"] == "light" ? 0.6 : 1.7
@@ -50,14 +50,6 @@ for theme_file in theme_files
     s4 = weighted_color_mean(w, c4, bg)
     s5 = weighted_color_mean(w, c5, bg)
 
-    # Theme
-    all_colors = [
-        c1 c2 c3 c4 c5
-        s1 s2 s3 s4 s5
-        gr[1] gr[2] gr[3] gr[4] gr[5]
-        ui[1] ui[2] ui[3] ui[4] ui[5]
-    ]
-
     # Theme dictionary
     td = Dict(
         "name" => theme["name"],
@@ -78,6 +70,8 @@ for theme_file in theme_files
 
     for i in eachindex(gr)
         td["g$(i)"] = "#$(hex(gr[i]))"
+    end
+    for i in eachindex(ui)
         td["u$(i)"] = "#$(hex(ui[i]))"
     end
 
