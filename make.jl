@@ -3,160 +3,40 @@ using JSON
 using Mustache
 using Luxor
 
-# Load the main Mustache template
-include(joinpath(@__DIR__, "libs", "template.jl"))
-
-# Read the raw JSON scheme files
-theme_files = readdir(joinpath("libs", "themes"); join=true)
-
 # Create the path to store the compiled files
 ispath("themes") || mkpath("themes")
 ispath("cards") || mkpath("cards")
 
-# Function for relative luminance
-function relative_luminance(color)
-    correct = (v) -> v <= 0.04045 ? v/12.92 : ((v+0.055)/1.055)^2.4
-    return 0.2126*correct(color.r) + 0.7152*correct(color.g) + 0.0722*correct(color.b)
-end
+# Load the main Mustache template
+include(joinpath(@__DIR__, "lib", "template.jl"))
 
-# Function for color contrast
-function contrast(c1, c2)
-    lighter, darker = c1, c2
-    if relative_luminance(c1) <= relative_luminance(c2)
-        darker, lighter = c1, c2
-    end
-    return (relative_luminance(lighter) + 0.05) / (relative_luminance(darker) + 0.05)
-end
+# Load the color functions
+include(joinpath(@__DIR__, "lib", "colorspace.jl"))
 
-# Loop across themes
+# Load the theme making functions
+include(joinpath(@__DIR__, "lib", "thememaker.jl"))
+
+# Load the theme making functions
+include(joinpath(@__DIR__, "lib", "cardmaker.jl"))
+
+# Read the raw JSON scheme files
+theme_files = readdir(joinpath(@__DIR__, "schemes"); join = true)
+
 for theme_file in theme_files
-
-    @info "Rendering $(theme_file)"
-
+    # Read the theme as a JSON file
     theme = JSON.parsefile(theme_file)
 
-    # Structure colors
-    fg = parse(Colorant, theme["foreground"])
-    bg = parse(Colorant, theme["background"])
+    colorize!(theme)
+    structure!(theme)
+    ui!(theme)
+    accents!(theme)
 
-    # Structure gradient
-    gr = range(bg, fg, length=7)[4:1:6]
-
-    # UI gradient
-    ui_w = theme["type"] == "light" ? 0.6 : 2.3
-    ui_endpoint = convert(HSL, bg)
-    ui_endpoint = convert(RGB, HSL(ui_endpoint.h, ui_endpoint.s, ui_w * ui_endpoint.l))
-    ui = range(bg, convert(typeof(bg), ui_endpoint), length=7)[3:7]
-
-    # Main colors
-    c1 = parse(Colorant, theme["c1"])
-    c3 = parse(Colorant, theme["c3"])
-    c5 = parse(Colorant, theme["c5"])
-
-    # If themes only specify the odd colors, the even ones are considered to be their midpoints
-    c2 = haskey(theme, "c2") ? parse(Colorant, theme["c2"]) : weighted_color_mean(0.5, c1, c3)
-    c4 = haskey(theme, "c4") ? parse(Colorant, theme["c4"]) : weighted_color_mean(0.5, c2, c5)
-
-    # Subtle colors
-    w = 0.82
-    s1 = weighted_color_mean(w, c1, bg)
-    s2 = weighted_color_mean(w, c2, bg)
-    s3 = weighted_color_mean(w, c3, bg)
-    s4 = weighted_color_mean(w, c4, bg)
-    s5 = weighted_color_mean(w, c5, bg)
-
-    @info """
-        COLOR REPORT $(theme_file)
-
-        bg/fg = $(contrast(bg, fg))
-
-        bg/c1 = $(contrast(bg, c1))
-        bg/c2 = $(contrast(bg, c2))
-        bg/c3 = $(contrast(bg, c3))
-        bg/c4 = $(contrast(bg, c4))
-        bg/c5 = $(contrast(bg, c5))
-
-        bg/s1 = $(contrast(bg, s1))
-        bg/s2 = $(contrast(bg, s2))
-        bg/s3 = $(contrast(bg, s3))
-        bg/s4 = $(contrast(bg, s4))
-        bg/s5 = $(contrast(bg, s5))
-
-        bg/g1 = $(contrast(bg, gr[1]))
-        bg/g2 = $(contrast(bg, gr[2]))
-        bg/g3 = $(contrast(bg, gr[3]))
-    """
-
-    # Theme dictionary
-    td = Dict(
-        "name" => theme["name"],
-        "type" => theme["type"],
-        "foreground" => "#$(hex(fg))",
-        "background" => "#$(hex(bg))",
-        "c1" => "#$(hex(c1))",
-        "c2" => "#$(hex(c2))",
-        "c3" => "#$(hex(c3))",
-        "c4" => "#$(hex(c4))",
-        "c5" => "#$(hex(c5))",
-        "s1" => "#$(hex(s1))",
-        "s2" => "#$(hex(s2))",
-        "s3" => "#$(hex(s3))",
-        "s4" => "#$(hex(s4))",
-        "s5" => "#$(hex(s5))"
-    )
-
-    for i in eachindex(gr)
-        td["g$(i)"] = "#$(hex(gr[i]))"
-    end
-    for i in eachindex(ui)
-        td["u$(i)"] = "#$(hex(ui[i]))"
+    theme_json = JSON.parse(render(template, template_data(theme)))
+    theme_output =
+        joinpath(@__DIR__, "themes", lowercase(theme["shortcode"]) * "-color-theme.json")
+    open(theme_output, "w") do json_file
+        return JSON.print(json_file, theme_json, 4)
     end
 
-    theme_json = JSON.parse(render(template, td))
-    theme_output = replace(theme_file, r"libs/themes/(\w+).json" => s"themes/\1-color-theme.json")
-    open(theme_output, "w") do f
-        JSON.print(f, theme_json, 4)
-    end
-
-    # Make the demo card
-
-    theme_name = replace(theme_file, r"libs/themes/(\w+).json" => s"\1")
-    Drawing(800, 360, replace(theme_file, r"libs/themes/(\w+).json" => s"cards/\1.png"))
-    fontsize(18)
-    fontface("MonoLisa")
-    background(theme["background"])
-
-    fontsize(24)
-    setcolor(theme["foreground"])
-    text(titlecase(theme_name) * " $(theme["foreground"]) / $(theme["background"])", Point(20, 20), halign=:left, valign=:top)
-
-    fontsize(20)
-
-    c = [c1, c2, c3, c4, c5]
-    s = [s1, s2, s3, s4, s5]
-
-    for (i, col) in enumerate(c)
-        setcolor(col)
-        text("#$(hex(col))", Point(20 + (i - 1) * 150, 120), halign=:left, valign=:top)
-    end
-    for (i, col) in enumerate(s)
-        setcolor(col)
-        text("#$(hex(col))", Point(20 + (i - 1) * 150, 150), halign=:left, valign=:top)
-    end
-    for (i, col) in enumerate(gr)
-        setcolor(col)
-        text("#$(hex(col))", Point(20 + (i - 1) * 150, 180), halign=:left, valign=:top)
-    end
-
-    fontsize(24)
-    setcolor(theme["foreground"])
-    text("UI Colors", Point(20, 260), halign=:left, valign=:top)
-
-    for ui_index in axes(ui, 1)
-        setcolor(ui[ui_index])
-        rect(Point((800 / 5) * (ui_index - 1), 320), 800 / 5, 40, action=:fill)
-    end
-
-    finish()
-    preview()
+    cardmaker(theme)
 end
