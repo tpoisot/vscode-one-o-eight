@@ -13,6 +13,21 @@ theme_files = readdir(joinpath("libs", "themes"); join=true)
 ispath("themes") || mkpath("themes")
 ispath("cards") || mkpath("cards")
 
+# Function for relative luminance
+function relative_luminance(color)
+    correct = (v) -> v <= 0.04045 ? v/12.92 : ((v+0.055)/1.055)^2.4
+    return 0.2126*correct(color.r) + 0.7152*correct(color.g) + 0.0722*correct(color.b)
+end
+
+# Function for color contrast
+function contrast(c1, c2)
+    lighter, darker = c1, c2
+    if relative_luminance(c1) <= relative_luminance(c2)
+        darker, lighter = c1, c2
+    end
+    return (relative_luminance(lighter) + 0.05) / (relative_luminance(darker) + 0.05)
+end
+
 # Loop across themes
 for theme_file in theme_files
 
@@ -49,6 +64,28 @@ for theme_file in theme_files
     s3 = weighted_color_mean(w, c3, bg)
     s4 = weighted_color_mean(w, c4, bg)
     s5 = weighted_color_mean(w, c5, bg)
+
+    @info """
+        COLOR REPORT $(theme_file)
+
+        bg/fg = $(contrast(bg, fg))
+
+        bg/c1 = $(contrast(bg, c1))
+        bg/c2 = $(contrast(bg, c2))
+        bg/c3 = $(contrast(bg, c3))
+        bg/c4 = $(contrast(bg, c4))
+        bg/c5 = $(contrast(bg, c5))
+
+        bg/s1 = $(contrast(bg, s1))
+        bg/s2 = $(contrast(bg, s2))
+        bg/s3 = $(contrast(bg, s3))
+        bg/s4 = $(contrast(bg, s4))
+        bg/s5 = $(contrast(bg, s5))
+
+        bg/g1 = $(contrast(bg, gr[1]))
+        bg/g2 = $(contrast(bg, gr[2]))
+        bg/g3 = $(contrast(bg, gr[3]))
+    """
 
     # Theme dictionary
     td = Dict(

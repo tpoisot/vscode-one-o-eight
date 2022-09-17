@@ -49,7 +49,7 @@ template = mt"""
         "notebook.focusedCellBorder": "{{u1}}",
         "notebook.cellHoverBackground": "{{u1}}55",
         "badge.foreground": "{{foreground}}",
-        "badge.background": "{{s1}}",
+        "badge.background": "{{s1}}"
 	},
 	"tokenColors": [
 		{

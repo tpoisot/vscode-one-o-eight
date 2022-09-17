@@ -266,6 +266,8 @@
         "tab.inactiveBackground": "#D1C2C2",
         "notebookStatusErrorIcon.foreground": "#497566",
         "tab.border": "#DFD4D4",
+        "badge.foreground": "#273A27",
+        "badge.background": "#946644",
         "editor.foreground": "#273A27",
         "notebook.focusedCellBorder": "#DFD4D4",
         "editorGroupHeader.tabsBackground": "#DFD4D4",

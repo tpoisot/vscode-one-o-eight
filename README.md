@@ -1,18 +1,16 @@
 # One o Eight
 
-Note that all main colors in all schemes have a contrast of at least 7:1 to
-their background, corresponding to an AAA accessibility contrast. This doesn't
-mean that the colors have strong differences from one another (most do), but
-that the contrast between the colors and the background is sufficient (and
-relatively homogeneous). The foreground has a 15:1 contrast to its background in
-(almost) all themes.
-
-**Note**: This is not true of the `safe` colorscheme, which is adapted from the
-IBM color palette to maintain maximum color distinguishability.
+The color schemes are optimized for *contrast*, meaning that the background and
+foreground have a color contrast of 15, the main colors and the background have
+a color contrast of 7 and more (with a few exceptions in the process of being
+fixed), and the muted colors and the background have a color contrast of 4 or
+more.
 
 ## Overview of the themes
 
 ![](cards/light.png)
+
+![](cards/bright.png)
 
 ![](cards/calm.png)
 
@@ -25,5 +23,3 @@ IBM color palette to maintain maximum color distinguishability.
 ![](cards/dark.png)
 
 ![](cards/black.png)
-
-![](cards/seastorm.png)
