@@ -19,7 +19,8 @@ end
 
 function ui!(theme)
     idx = isequal("light")(theme["type"]) ? (3:7) : (2:6) 
-    ui = range(theme["background"], theme["foreground"]; length = 8)[idx]
+    endcolor = weighted_color_mean(0.7, theme["background"], theme["foreground"])
+    ui = range(theme["background"], endcolor; length = 8)[idx]
     for (i, u) in enumerate(ui)
         theme["u$(i)"] = u
     end
