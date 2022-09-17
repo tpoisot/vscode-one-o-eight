@@ -28,10 +28,10 @@ for theme_file in theme_files
     gr = range(bg, fg, length=7)[4:1:6]
 
     # UI gradient
-    ui_w = theme["type"] == "light" ? 0.6 : 1.7
+    ui_w = theme["type"] == "light" ? 0.6 : 2.3
     ui_endpoint = convert(HSL, bg)
     ui_endpoint = convert(RGB, HSL(ui_endpoint.h, ui_endpoint.s, ui_w * ui_endpoint.l))
-    ui = range(bg, convert(typeof(bg), ui_endpoint), length=6)[2:6]
+    ui = range(bg, convert(typeof(bg), ui_endpoint), length=7)[3:7]
 
     # Main colors
     c1 = parse(Colorant, theme["c1"])

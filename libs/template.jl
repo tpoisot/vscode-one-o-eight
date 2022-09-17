@@ -8,17 +8,18 @@ template = mt"""
 		"editor.foreground": "{{foreground}}",
         "editor.selectionBackground": "{{g1}}66",
         "editor.lineHighlightBorder": "{{background}}",
-        "editorLineNumber.foreground": "{{g2}}",
+        "editorLineNumber.foreground": "{{g1}}",
         "editorLineNumber.activeForeground": "{{g3}}",
         "editorCursor.foreground": "{{g3}}",
         "foreground": "{{foreground}}",
         "list.highlightForeground": "{{foreground}}",
-        "icon.foreground": "{{u5}}",
+        "icon.foreground": "{{s1}}",
         "activityBar.background": "{{u1}}",
+        "activityBar.foreground": "{{s1}}",
+        "activityBar.inactiveForeground": "{{u4}}",
         "sideBar.background": "{{u1}}",
         "sideBar.dropBackground": "{{s1}}",
         "sideBar.border": "{{u1}}",
-        "activityBar.foreground": "{{u5}}",
         "statusBar.background": "{{u1}}",
         "statusBar.foreground": "{{foreground}}",
         "titleBar.activeBackground": "{{u1}}",
@@ -46,7 +47,9 @@ template = mt"""
         "notebookStatusRunningIcon.foreground": "{{s2}}",
         "notebook.focusedCellBackground": "{{u1}}",
         "notebook.focusedCellBorder": "{{u1}}",
-        "notebook.cellHoverBackground": "{{u1}}55"
+        "notebook.cellHoverBackground": "{{u1}}55",
+        "badge.foreground": "{{foreground}}",
+        "badge.background": "{{s1}}",
 	},
 	"tokenColors": [
 		{
@@ -56,13 +59,6 @@ template = mt"""
 				"foreground": "{{g2}}"
 			}
 		},
-        {
-            "name": "Punctuation",
-            "scope": ["punctuation.definition"],
-            "settings": {
-                "foreground": "{{g3}}"
-            }
-        },
         {
             "name": "Types",
             "scope": [
@@ -78,7 +74,7 @@ template = mt"""
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "{{s4}}",
+                "foreground": "{{s5}}",
                 "fontStyle": "italic"
             }
         },
@@ -301,6 +297,13 @@ template = mt"""
             "settings": {
                 "foreground": "{{g3}}",
                 "fontStyle": "underline"
+            }
+        },
+        {
+            "name": "Punctuation",
+            "scope": ["punctuation.definition"],
+            "settings": {
+                "foreground": "{{g3}}"
             }
         }
 	]

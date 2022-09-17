@@ -11,15 +11,6 @@
             }
         },
         {
-            "name": "Punctuation",
-            "scope": [
-                "punctuation.definition"
-            ],
-            "settings": {
-                "foreground": "#C3C0BF"
-            }
-        },
-        {
             "name": "Types",
             "scope": [
                 "support.type"
@@ -34,7 +25,7 @@
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "#9B8558",
+                "foreground": "#C8666A",
                 "fontStyle": "italic"
             }
         },
@@ -258,6 +249,15 @@
                 "foreground": "#C3C0BF",
                 "fontStyle": "underline"
             }
+        },
+        {
+            "name": "Punctuation",
+            "scope": [
+                "punctuation.definition"
+            ],
+            "settings": {
+                "foreground": "#C3C0BF"
+            }
         }
     ],
     "colors": {
@@ -270,12 +270,12 @@
         "notebook.focusedCellBorder": "#0D0D28",
         "editorGroupHeader.tabsBackground": "#0D0D28",
         "editorGutter.modifiedBackground": "#6885AF",
-        "icon.foreground": "#13133C",
+        "icon.foreground": "#A56FB4",
         "editor.background": "#0B0B23",
         "diffEditor.diagonalFill": "#9E9BA044",
         "statusBar.background": "#0D0D28",
         "gitDecoration.untrackedResourceForeground": "#C785D4",
-        "activityBar.foreground": "#13133C",
+        "activityBar.foreground": "#7CA0CE",
         "gitDecoration.addedResourceForeground": "#64AC64",
         "editor.selectionBackground": "#79778166",
         "editorGutter.addedBackground": "#548F58",
@@ -286,10 +286,11 @@
         "sideBar.border": "#0D0D28",
         "notebook.cellHoverBackground": "#0D0D2855",
         "gitDecoration.modifiedResourceForeground": "#7CA0CE",
-        "editorLineNumber.foreground": "#9E9BA0",
+        "editorLineNumber.foreground": "#797781",
         "foreground": "#E7E3DE",
         "notebook.focusedEditorBorder": "#C785D4",
         "editorCursor.foreground": "#C3C0BF",
+        "activityBar.inactiveForeground": "#0F0F32",
         "sideBar.background": "#0D0D28",
         "notebookStatusRunningIcon.foreground": "#6885AF",
         "list.highlightForeground": "#E7E3DE",
