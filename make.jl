@@ -43,7 +43,7 @@ for theme_file in theme_files
     c4 = haskey(theme, "c4") ? parse(Colorant, theme["c4"]) : weighted_color_mean(0.5, c2, c5)
 
     # Subtle colors
-    w = 0.8
+    w = 0.82
     s1 = weighted_color_mean(w, c1, bg)
     s2 = weighted_color_mean(w, c2, bg)
     s3 = weighted_color_mean(w, c3, bg)
