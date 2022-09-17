@@ -25,7 +25,7 @@ for theme_file in theme_files
     bg = parse(Colorant, theme["background"])
 
     # Structure gradient
-    gr = range(bg, fg, length=9)[3:7]
+    gr = range(bg, fg, length=15)[10:14]
 
     # UI gradient
     ui_w = theme["type"] == "light" ? 0.6 : 1.7
