@@ -261,7 +261,7 @@
         }
     ],
     "colors": {
-        "gitDecoration.ignoredResourceForeground": "#D7D7D7",
+        "gitDecoration.ignoredResourceForeground": "#CDCDCD",
         "tab.unfocusedActiveBackground": "#FDFDFD",
         "tab.inactiveBackground": "#E1E1E1",
         "notebookStatusErrorIcon.foreground": "#E24D96",
@@ -276,10 +276,10 @@
         "editor.background": "#FDFDFD",
         "diffEditor.diagonalFill": "#D7D7D744",
         "statusBar.background": "#EBEBEB",
-        "gitDecoration.untrackedResourceForeground": "#785EF0",
+        "gitDecoration.untrackedResourceForeground": "#DC267F",
         "activityBar.foreground": "#212121",
         "gitDecoration.addedResourceForeground": "#FFB000",
-        "editor.selectionBackground": "#E1E1E166",
+        "editor.selectionBackground": "#D7D7D766",
         "editorGutter.addedBackground": "#FFBE2E",
         "editor.lineHighlightBorder": "#FDFDFD",
         "notebookStatusSuccessIcon.foreground": "#FFBE2E",
