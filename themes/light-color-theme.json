@@ -291,7 +291,7 @@
         "editorLineNumber.foreground": "#E0E0E0",
         "foreground": "#242424",
         "notebook.focusedEditorBorder": "#69468D",
-        "editorCursor.foreground": "#C3C3C3",
+        "editorCursor.foreground": "#8366A1",
         "activityBar.inactiveForeground": "#C3C3C3",
         "sideBar.background": "#E8E8E8",
         "notebookStatusRunningIcon.foreground": "#457798",

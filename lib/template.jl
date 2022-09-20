@@ -1,4 +1,3 @@
-
 template = mt"""
 {
 	"name": "{{name}}",
@@ -10,7 +9,7 @@ template = mt"""
         "editor.lineHighlightBorder": "{{background}}",
         "editorLineNumber.foreground": "{{u2}}",
         "editorLineNumber.activeForeground": "{{u5}}",
-        "editorCursor.foreground": "{{u5}}",
+        "editorCursor.foreground": "{{s1}}",
         "foreground": "{{foreground}}",
         "list.highlightForeground": "{{foreground}}",
         "icon.foreground": "{{foreground}}",
