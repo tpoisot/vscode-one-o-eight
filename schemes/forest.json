@@ -1,9 +1,9 @@
 {
     "name": "One O Eight Forest",
     "type": "light",
-    "background": "#FCFBFB",
-    "foreground": "#273A27",
-    "c1": "#7E461C",
+    "background": "#FAFAF8",
+    "foreground": "#1E0F01",
+    "c1": "#784E1A",
     "c3": "#3E5B20",
-    "c5": "#225846"
+    "c5": "#16674C"
 }

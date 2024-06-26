@@ -1,9 +1,9 @@
 {
     "name": "One O Eight Calm",
     "type": "light",
-    "background": "#FAF9F9",
-    "foreground": "#2B1F26",
-    "c1": "#145B77",
-    "c3": "#186035",
+    "background": "#F7F6F5",
+    "foreground": "#061E0D",
+    "c1": "#16536B",
+    "c3": "#165D34",
     "c5": "#8c2d5b"
 }
