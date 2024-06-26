@@ -3,7 +3,7 @@ function cardmaker(theme)
 
     fontsize(18)
 
-    fontface("MonoLisa")
+    fontface("Monaspace Argon")
     background(theme["background"])
 
     fontsize(24)

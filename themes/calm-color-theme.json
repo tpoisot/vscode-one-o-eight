@@ -25,7 +25,7 @@
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "#A05278",
+                "foreground": "#A05277",
                 "fontStyle": "italic"
             }
         },
@@ -53,7 +53,7 @@
                 "constant.character.escape"
             ],
             "settings": {
-                "foreground": "#4D4349",
+                "foreground": "#4E4349",
                 "fontStyle": "bold italic"
             }
         },
@@ -63,7 +63,7 @@
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "#4D4349"
+                "foreground": "#4E4349"
             }
         },
         {
@@ -108,7 +108,7 @@
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "#3D788F"
+                "foreground": "#3D778E"
             }
         },
         {
@@ -246,7 +246,7 @@
                 "string.other.link.description.markdown.citation"
             ],
             "settings": {
-                "foreground": "#4D4349",
+                "foreground": "#4E4349",
                 "fontStyle": "underline"
             }
         },
@@ -261,10 +261,10 @@
         }
     ],
     "colors": {
-        "gitDecoration.ignoredResourceForeground": "#CECACB",
+        "gitDecoration.ignoredResourceForeground": "#CECBCC",
         "tab.unfocusedActiveBackground": "#FAF9F9",
         "tab.inactiveBackground": "#DFDDDE",
-        "notebookStatusErrorIcon.foreground": "#A05278",
+        "notebookStatusErrorIcon.foreground": "#A05277",
         "tab.border": "#E8E6E7",
         "badge.foreground": "#2B1F26",
         "badge.background": "#3F7A73",
@@ -274,16 +274,16 @@
         "editorGutter.modifiedBackground": "#3F7A73",
         "icon.foreground": "#2B1F26",
         "editor.background": "#FAF9F9",
-        "diffEditor.diagonalFill": "#D7D3D444",
+        "diffEditor.diagonalFill": "#D7D4D544",
         "statusBar.background": "#E8E6E7",
         "gitDecoration.untrackedResourceForeground": "#8C2D5B",
         "activityBar.foreground": "#2B1F26",
         "gitDecoration.addedResourceForeground": "#186035",
-        "editor.selectionBackground": "#D7D3D466",
+        "editor.selectionBackground": "#D7D4D566",
         "editorGutter.addedBackground": "#417C58",
         "editor.lineHighlightBorder": "#FAF9F9",
         "notebookStatusSuccessIcon.foreground": "#417C58",
-        "editorGutter.deletedBackground": "#A05278",
+        "editorGutter.deletedBackground": "#A05277",
         "titleBar.activeBackground": "#E8E6E7",
         "sideBar.border": "#E8E6E7",
         "notebook.cellHoverBackground": "#E8E6E755",
@@ -291,8 +291,8 @@
         "editorLineNumber.foreground": "#DFDDDE",
         "foreground": "#2B1F26",
         "notebook.focusedEditorBorder": "#145B77",
-        "editorCursor.foreground": "#3D788F",
-        "activityBar.inactiveForeground": "#C4C0C2",
+        "editorCursor.foreground": "#3D778E",
+        "activityBar.inactiveForeground": "#C5C1C3",
         "sideBar.background": "#E8E6E7",
         "notebookStatusRunningIcon.foreground": "#3F7A73",
         "list.highlightForeground": "#2B1F26",
@@ -300,7 +300,7 @@
         "notebook.focusedCellBackground": "#E8E6E7",
         "sideBar.dropBackground": "#3F7A73",
         "statusBar.foreground": "#2B1F26",
-        "editorLineNumber.activeForeground": "#C4C0C2",
+        "editorLineNumber.activeForeground": "#C5C1C3",
         "diffEditor.removedTextBackground": "#70666822",
         "titleBar.inactiveBackground": "#E8E6E7",
         "diffEditor.insertedTextBackground": "#3F7A7322",

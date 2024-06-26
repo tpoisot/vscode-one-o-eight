@@ -7,7 +7,7 @@
                 "comment"
             ],
             "settings": {
-                "foreground": "#6E7B6E"
+                "foreground": "#6E7A6E"
             }
         },
         {
@@ -25,7 +25,7 @@
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "#497566",
+                "foreground": "#497567",
                 "fontStyle": "italic"
             }
         },
@@ -53,7 +53,7 @@
                 "constant.character.escape"
             ],
             "settings": {
-                "foreground": "#4B594A",
+                "foreground": "#4A5A4A",
                 "fontStyle": "bold italic"
             }
         },
@@ -63,7 +63,7 @@
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "#4B594A"
+                "foreground": "#4A5A4A"
             }
         },
         {
@@ -81,7 +81,7 @@
                 "meta.bracket"
             ],
             "settings": {
-                "foreground": "#6E7B6E"
+                "foreground": "#6E7A6E"
             }
         },
         {
@@ -108,7 +108,7 @@
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "#946644"
+                "foreground": "#956744"
             }
         },
         {
@@ -198,7 +198,7 @@
                 "constant.other.reference.link.markdown"
             ],
             "settings": {
-                "foreground": "#547757",
+                "foreground": "#557757",
                 "fontStyle": "italic"
             }
         },
@@ -246,7 +246,7 @@
                 "string.other.link.description.markdown.citation"
             ],
             "settings": {
-                "foreground": "#4B594A",
+                "foreground": "#4A5A4A",
                 "fontStyle": "underline"
             }
         },
@@ -256,15 +256,15 @@
                 "punctuation.definition"
             ],
             "settings": {
-                "foreground": "#919B91"
+                "foreground": "#929A91"
             }
         }
     ],
     "colors": {
         "gitDecoration.ignoredResourceForeground": "#CED2CD",
         "tab.unfocusedActiveBackground": "#FCFBFB",
-        "tab.inactiveBackground": "#E0E2E0",
-        "notebookStatusErrorIcon.foreground": "#497566",
+        "tab.inactiveBackground": "#E1E2E0",
+        "notebookStatusErrorIcon.foreground": "#497567",
         "tab.border": "#EAEAE9",
         "badge.foreground": "#273A27",
         "badge.background": "#7A6F46",
@@ -274,24 +274,24 @@
         "editorGutter.modifiedBackground": "#7A6F46",
         "icon.foreground": "#273A27",
         "editor.background": "#FCFBFB",
-        "diffEditor.diagonalFill": "#D8DAD644",
+        "diffEditor.diagonalFill": "#D7DAD644",
         "statusBar.background": "#EAEAE9",
         "gitDecoration.untrackedResourceForeground": "#225846",
         "activityBar.foreground": "#273A27",
         "gitDecoration.addedResourceForeground": "#3E5B20",
-        "editor.selectionBackground": "#D8DAD666",
+        "editor.selectionBackground": "#D7DAD666",
         "editorGutter.addedBackground": "#607847",
         "editor.lineHighlightBorder": "#FCFBFB",
         "notebookStatusSuccessIcon.foreground": "#607847",
-        "editorGutter.deletedBackground": "#497566",
+        "editorGutter.deletedBackground": "#497567",
         "titleBar.activeBackground": "#EAEAE9",
         "sideBar.border": "#EAEAE9",
         "notebook.cellHoverBackground": "#EAEAE955",
         "gitDecoration.modifiedResourceForeground": "#5E501E",
-        "editorLineNumber.foreground": "#E0E2E0",
+        "editorLineNumber.foreground": "#E1E2E0",
         "foreground": "#273A27",
         "notebook.focusedEditorBorder": "#7E461C",
-        "editorCursor.foreground": "#946644",
+        "editorCursor.foreground": "#956744",
         "activityBar.inactiveForeground": "#C5C9C4",
         "sideBar.background": "#EAEAE9",
         "notebookStatusRunningIcon.foreground": "#7A6F46",
@@ -301,7 +301,7 @@
         "sideBar.dropBackground": "#7A6F46",
         "statusBar.foreground": "#273A27",
         "editorLineNumber.activeForeground": "#C5C9C4",
-        "diffEditor.removedTextBackground": "#54775722",
+        "diffEditor.removedTextBackground": "#55775722",
         "titleBar.inactiveBackground": "#EAEAE9",
         "diffEditor.insertedTextBackground": "#7A6F4622",
         "activityBar.background": "#EAEAE9",
