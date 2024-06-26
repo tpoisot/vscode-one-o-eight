@@ -2,10 +2,10 @@
     "name": "One O Eight Bright",
     "type": "light",
     "background": "#FFFFFF",
-    "foreground": "#131213",
+    "foreground": "#222426",
     "c1": "#6F449A",
     "c2": "#105B8D",
     "c3": "#0E6336",
-    "c4": "#95431C",
-    "c5": "#B11111"
+    "c4": "#814313",
+    "c5": "#B01212"
 }
