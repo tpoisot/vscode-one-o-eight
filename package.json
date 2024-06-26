@@ -56,6 +56,11 @@
                 "label": "One O Eight Seaside",
                 "uiTheme": "vs",
                 "path": "./themes/seaside-color-theme.json"
+            },
+            {
+                "label": "One O Eight Aubergine",
+                "uiTheme": "vs",
+                "path": "./themes/aubergine-color-theme.json"
             }
         ]
     }
