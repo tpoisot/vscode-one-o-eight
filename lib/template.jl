@@ -25,6 +25,7 @@ template = mt"""
         "dropdown.listBackground": "{{u3}}",
         "editor.lineHighlightBorder": "{{background}}",
         "editor.selectionBackground": "{{u3}}66",
+        "editorStickyScroll.shadow": "{{u1}}66",
         "editorCursor.foreground": "{{s1}}",
         "editorGroup.border": "{{u1}}",
         "editorGroupHeader.tabsBackground": "{{u1}}",
@@ -44,8 +45,16 @@ template = mt"""
         "input.foreground": "{{foreground}}",
         "input.placeholderForeground": "{{u3}}",
         "list.activeSelectionBackground": "{{u3}}",
+        "list.activeFocusBackground": "{{u3}}",
+        "list.inactiveFocusBackground": "{{u3}}",
+        "list.inactiveSelectionBackground": "{{u3}}",
         "list.activeSelectionForeground": "{{foreground}}",
         "list.highlightForeground": "{{foreground}}",
+        "list.hoverBackground": "{{u4}}",
+        "list.hoverForeground": "{{foreground}}",
+        "list.focusOutline": "{{u1}}",
+        "list.focusAndSelectionOutline": "{{u1}}",
+        "list.inactiveFocusOutline": "{{u1}}",
         "notebook.cellHoverBackground": "{{u1}}55",
         "notebook.focusedCellBackground": "{{u1}}",
         "notebook.focusedCellBorder": "{{u1}}",
@@ -73,7 +82,12 @@ template = mt"""
         "titleBar.activeForeground": "{{foreground}}",
         "titleBar.inactiveBackground": "{{u1}}",
         "titleBar.inactiveForeground": "{{foreground}}",
-        "window.activeBorder": "{{u1}}"
+        "window.activeBorder": "{{u1}}",
+        "quickInput.background": "{{u1}}",
+        "quickInput.foreground": "{{foreground}}",
+        "quickInputList.focusBackground": "{{u2}}",
+        "quickInputList.focusForeground": "{{c2}}",
+        "pickerGroup.border": "{{u4}}"
 	},
 	"tokenColors": [
 		{
