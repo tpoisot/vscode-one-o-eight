@@ -3,7 +3,8 @@ function cardmaker(theme)
 
     fontsize(18)
 
-    fontface("Monaspace Argon Medium")
+    fontvar = ["Neon", "Argon", "Xenon", "Radon", "Krypton"]
+    fontface("Monaspace $(rand(fontvar))")
     background(theme["background"])
 
     fontsize(24)

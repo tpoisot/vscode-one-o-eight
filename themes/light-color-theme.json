@@ -25,7 +25,7 @@
                 "support.function.macro"
             ],
             "settings": {
-                "foreground": "#764658",
+                "foreground": "#8D4E66",
                 "fontStyle": "italic"
             }
         },
@@ -35,7 +35,7 @@
                 "constant"
             ],
             "settings": {
-                "foreground": "#591F35"
+                "foreground": "#752946"
             }
         },
         {
@@ -263,7 +263,7 @@
     "colors": {
         "gitDecoration.ignoredResourceForeground": "#C1C1C4",
         "tab.unfocusedActiveBackground": "#FAF7F5",
-        "notebookStatusErrorIcon.foreground": "#764658",
+        "notebookStatusErrorIcon.foreground": "#8D4E66",
         "tab.inactiveBackground": "#D8D6D8",
         "button.hoverBackground": "#1F4C59",
         "dropdown.foreground": "#141F33",
@@ -285,7 +285,7 @@
         "dropdown.border": "#C1C1C4",
         "statusBar.background": "#E3E1E2",
         "dropdown.listBackground": "#CCCCCE",
-        "gitDecoration.untrackedResourceForeground": "#591F35",
+        "gitDecoration.untrackedResourceForeground": "#752946",
         "list.focusOutline": "#E3E1E2",
         "activityBar.foreground": "#141F33",
         "quickInputList.focusForeground": "#1F4C59",
@@ -294,7 +294,7 @@
         "editorGutter.addedBackground": "#467547",
         "editor.lineHighlightBorder": "#FAF7F5",
         "notebookStatusSuccessIcon.foreground": "#467547",
-        "editorGutter.deletedBackground": "#764658",
+        "editorGutter.deletedBackground": "#8D4E66",
         "titleBar.activeBackground": "#E3E1E2",
         "pickerGroup.border": "#C1C1C4",
         "list.activeFocusBackground": "#CCCCCE",
@@ -342,7 +342,7 @@
         "diffEditor.insertedTextBackground": "#466B7522",
         "activityBar.background": "#E3E1E2",
         "editorGroup.border": "#E3E1E2",
-        "gitDecoration.deletedResourceForeground": "#591F35",
+        "gitDecoration.deletedResourceForeground": "#752946",
         "tab.inactiveForeground": "#141F33",
         "list.activeSelectionForeground": "#141F33"
     },
