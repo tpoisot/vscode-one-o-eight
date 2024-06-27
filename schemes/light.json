@@ -1,11 +1,11 @@
 {
     "name": "One O Eight Light",
     "type": "light",
-    "background": "#fbfbfb",
-    "foreground": "#242425",
-    "c1": "#69468D",
-    "c2": "#1D5A83",
-    "c3": "#156038",
-    "c4": "#946A0F",
-    "c5": "#AB0F2E"
+    "background": "#FAF7F5",
+    "foreground": "#141F33",
+    "c1": "#453659",
+    "c2": "#1F4C59",
+    "c3": "#1F5921",
+    "c4": "#7A441A",
+    "c5": "#591F35"
 }

@@ -1,11 +1,11 @@
 {
     "name": "One O Eight Dark",
     "type": "dark",
-    "background": "#2A2A3B",
-    "foreground": "#F8F6F1",
-    "c1": "#D7A7E1",
-    "c2": "#91CCDC",
-    "c3": "#7BD078",
-    "c4": "#DFB674",
-    "c5": "#EA9C9C"
+    "background": "#141F33",
+    "foreground": "#FAF7F5",
+    "c1": "#A89FF5",
+    "c2": "#8DD9D1",
+    "c3": "#A4D98D",
+    "c4": "#D9B38D",
+    "c5": "#E695B7"
 }
