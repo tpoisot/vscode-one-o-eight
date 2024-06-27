@@ -99,7 +99,7 @@
                 "keyword"
             ],
             "settings": {
-                "foreground": "#453659"
+                "foreground": "#4B3C61"
             }
         },
         {
@@ -108,7 +108,7 @@
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "#665975"
+                "foreground": "#6B5E7C"
             }
         },
         {
@@ -137,7 +137,7 @@
                 "entity.other.attribute-name.table.toml"
             ],
             "settings": {
-                "foreground": "#453659",
+                "foreground": "#4B3C61",
                 "fontStyle": "bold"
             }
         },
@@ -147,7 +147,7 @@
                 "entity.name.tag"
             ],
             "settings": {
-                "foreground": "#453659",
+                "foreground": "#4B3C61",
                 "fontStyle": "bold"
             }
         },
@@ -177,7 +177,7 @@
                 "fenced_code.block.language"
             ],
             "settings": {
-                "foreground": "#453659",
+                "foreground": "#4B3C61",
                 "fontStyle": "italic"
             }
         },
@@ -218,7 +218,7 @@
                 "markup.inline.raw.string.markdown"
             ],
             "settings": {
-                "foreground": "#453659",
+                "foreground": "#4B3C61",
                 "fontStyle": ""
             }
         },
@@ -310,11 +310,11 @@
         "window.activeBorder": "#E3E1E2",
         "foreground": "#141F33",
         "list.inactiveFocusOutline": "#E3E1E2",
-        "notebook.focusedEditorBorder": "#453659",
+        "notebook.focusedEditorBorder": "#4B3C61",
         "list.inactiveSelectionBackground": "#CCCCCE",
         "list.inactiveFocusBackground": "#CCCCCE",
         "list.hoverBackground": "#C1C1C4",
-        "editorCursor.foreground": "#665975",
+        "editorCursor.foreground": "#6B5E7C",
         "list.activeSelectionBackground": "#CCCCCE",
         "button.border": "#1F4C59",
         "quickInputList.focusBackground": "#D8D6D8",
