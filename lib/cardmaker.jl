@@ -4,7 +4,9 @@ function cardmaker(theme)
     fontsize(18)
 
     fontvar = ["Neon", "Argon", "Xenon", "Radon", "Krypton"]
-    fontface("Monaspace $(rand(fontvar))")
+    fontwght = [" Light", " Medium", ""]
+    fontnm = "Monaspace $(rand(fontvar))$(rand(fontwght))"
+    fontface(fontnm)
     background(theme["background"])
 
     fontsize(24)
@@ -13,6 +15,12 @@ function cardmaker(theme)
         titlecase(theme["name"]) *
         " #$(hex(theme["foreground"])) / #$(hex(theme["background"]))",
         Point(20, 20);
+        halign = :left,
+        valign = :top,
+    )
+    text(
+        fontnm,
+        Point(20, 50);
         halign = :left,
         valign = :top,
     )

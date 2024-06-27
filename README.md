@@ -8,7 +8,7 @@ contrast of 4.5 or more.
 The cards for each theme give a list of all the main colors (top row), muted
 colors (middle row), and colors of the UI elements (boxes). The cards are set in
 [Monaspace](https://monaspace.githubnext.com/) 18, and each card uses a random
-variant of the font.
+variant and weight of the font.
 
 ## Core themes
 
