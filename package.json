@@ -23,11 +23,6 @@
                 "path": "./themes/light-color-theme.json"
             },
             {
-                "label": "One O Eight Bright",
-                "uiTheme": "vs",
-                "path": "./themes/bright-color-theme.json"
-            },
-            {
                 "label": "One O Eight Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/dark-color-theme.json"
@@ -38,39 +33,14 @@
                 "path": "./themes/black-color-theme.json"
             },
             {
-                "label": "One O Eight Calm",
-                "uiTheme": "vs",
-                "path": "./themes/calm-color-theme.json"
-            },
-            {
                 "label": "One O Eight Forest",
                 "uiTheme": "vs",
                 "path": "./themes/forest-color-theme.json"
             },
             {
-                "label": "One O Eight Safe",
-                "uiTheme": "vs",
-                "path": "./themes/safe-color-theme.json"
-            },
-            {
-                "label": "One O Eight Seaside",
-                "uiTheme": "vs",
-                "path": "./themes/seaside-color-theme.json"
-            },
-            {
                 "label": "One O Eight Aubergine",
                 "uiTheme": "vs",
                 "path": "./themes/aubergine-color-theme.json"
-            },
-            {
-                "label": "One O Eight Angular Dark",
-                "uiTheme": "vs",
-                "path": "./themes/angular-dark-color-theme.json"
-            },
-            {
-                "label": "One O Eight Angular Light",
-                "uiTheme": "vs",
-                "path": "./themes/angular-light-color-theme.json"
             }
         ]
     }

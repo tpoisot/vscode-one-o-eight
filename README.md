@@ -2,29 +2,20 @@
 
 The color schemes are optimized for *contrast*, meaning that the background and
 foreground have a color contrast of 15, the main colors and the background have
-a color contrast of 7 and more (with a few exceptions in the process of being
-fixed), and the muted colors and the background have a color contrast of 4 or
-more.
+a color contrast of 7, and the muted colors and the background have a color
+contrast of 4.5 or more.
 
-## Overview of the themes
-
-![](cards/angular-light.png)
-
-![](cards/angular-dark.png)
+## Core themes
 
 ![](cards/light.png)
 
-![](cards/bright.png)
+![](cards/dark.png)
 
-![](cards/calm.png)
+## Additional themes
 
 ![](cards/forest.png)
 
 ![](cards/seaside.png)
-
-![](cards/safe.png)
-
-![](cards/dark.png)
 
 ![](cards/black.png)
 
