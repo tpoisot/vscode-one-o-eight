@@ -20,8 +20,6 @@ variant and weight of the font.
 
 ![](cards/forest.png)
 
-![](cards/seaside.png)
-
 ![](cards/bright.png)
 
 ![](cards/black.png)
