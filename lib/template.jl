@@ -10,7 +10,6 @@ template = mt"""
         "activityBar.inactiveForeground": "{{u5}}",
         "activityBar.activeFocusBorder": "{{c2}}",
         "activityBar.activeBorder": "{{s2}}",
-        "badge.background": "{{s3}}",
         "badge.foreground": "{{foreground}}",
         "button.background": "{{s2}}",
         "button.border": "{{c2}}",
