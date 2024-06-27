@@ -269,7 +269,6 @@
         "dropdown.foreground": "#061E0D",
         "tab.border": "#DFE0DE",
         "badge.foreground": "#061E0D",
-        "badge.background": "#3F7957",
         "editorStickyScroll.shadow": "#DFE0DE66",
         "editor.foreground": "#061E0D",
         "notebook.focusedCellBorder": "#DFE0DE",

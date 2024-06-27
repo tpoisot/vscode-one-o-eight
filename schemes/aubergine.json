@@ -2,10 +2,10 @@
     "name": "One O Eight Aubergine",
     "type": "dark",
     "background": "#210529",
-    "foreground": "#F4F3F0",
-    "c1": "#D180E1",
-    "c2": "#6DA9BB",
-    "c3": "#76B967",
-    "c4": "#BDA654",
-    "c5": "#E37E8C"
+    "foreground": "#E6E3DA",
+    "c1": "#AC9DF2",
+    "c2": "#9DF2EF",
+    "c3": "#B1F29D",
+    "c4": "#F2CE9D",
+    "c5": "#F29DD3"
 }

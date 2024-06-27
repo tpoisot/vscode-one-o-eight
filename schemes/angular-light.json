@@ -1,11 +1,11 @@
 {
     "name": "One O Eight Angular Light",
     "type": "light",
-    "background": "#F1F0F5",
-    "foreground": "#171832",
-    "c1": "#543DA1",
-    "c2": "#1B5759",
-    "c3": "#25591B",
-    "c4": "#694B19",
-    "c5": "#853261"
+    "background": "#FAF7F5",
+    "foreground": "#141F33",
+    "c1": "#453659",
+    "c2": "#1F4C59",
+    "c3": "#1F5921",
+    "c4": "#7A441A",
+    "c5": "#591F35"
 }

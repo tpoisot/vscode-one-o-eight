@@ -1,11 +1,11 @@
 {
     "name": "One O Eight Angular Dark",
     "type": "dark",
-    "background": "#19162D",
-    "foreground": "#EAF2FC",
-    "c1": "#A8A1BF",
-    "c2": "#88B1B3",
-    "c3": "#8FB388",
-    "c4": "#B5A488",
-    "c5": "#D18CB3"
+    "background": "#141F33",
+    "foreground": "#FAF7F5",
+    "c1": "#A89FF5",
+    "c2": "#8DD9D1",
+    "c3": "#A4D98D",
+    "c4": "#D9B38D",
+    "c5": "#E695B7"
 }
