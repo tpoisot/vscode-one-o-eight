@@ -33,7 +33,7 @@ for theme_file in theme_files
 
     theme_json = JSON.parse(render(template, template_data(theme)))
     theme_output =
-        joinpath(@__DIR__, "themes", lowercase(theme["shortcode"]) * "-color-theme.json")
+        joinpath(@__DIR__, "themes", replace(lowercase(theme["shortcode"]), " " => "-") * "-color-theme.json")
     open(theme_output, "w") do json_file
         return JSON.print(json_file, theme_json, 4)
     end

@@ -1,5 +1,5 @@
 function cardmaker(theme)
-    Drawing(800, 360, joinpath(pwd(), "cards", lowercase(theme["shortcode"]) * ".png"))
+    Drawing(800, 360, joinpath(pwd(), "cards", replace(lowercase(theme["shortcode"]), " " => "-") * ".png"))
 
     fontsize(18)
 

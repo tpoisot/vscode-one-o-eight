@@ -8,6 +8,10 @@ more.
 
 ## Overview of the themes
 
+![](cards/angular-light.png)
+
+![](cards/angular-dark.png)
+
 ![](cards/light.png)
 
 ![](cards/bright.png)

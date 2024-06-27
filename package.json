@@ -61,6 +61,16 @@
                 "label": "One O Eight Aubergine",
                 "uiTheme": "vs",
                 "path": "./themes/aubergine-color-theme.json"
+            },
+            {
+                "label": "One O Eight Angular Dark",
+                "uiTheme": "vs",
+                "path": "./themes/angular-dark-color-theme.json"
+            },
+            {
+                "label": "One O Eight Angular Light",
+                "uiTheme": "vs",
+                "path": "./themes/angular-light-color-theme.json"
             }
         ]
     }
