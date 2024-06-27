@@ -35,12 +35,18 @@ for theme_file in theme_files
     println("#### Checking contrast for theme $(theme["name"])")
     for color_idx in 1:5
         c_contrast = contrast(theme["background"], theme["c$(color_idx)"])
-        s_contrast = contrast(theme["background"], theme["s$(color_idx)"])
+        s_contrast = contrast(theme["background"], theme["s$(color_idx)"])    
         if c_contrast < 7.0
             println("\t /!\\ c$(color_idx) fails to meet WCAG2.1 AAA")
         end
         if s_contrast < 4.5
             println("\t /!\\ s$(color_idx) fails to meet WCAG2.1 AA")
+        end
+        if color_idx <= 3
+            g_contrast = contrast(theme["background"], theme["g$(color_idx)"])
+            if g_contrast < 4.5
+                println("\t /!\\ g$(color_idx) fails to meet WCAG2.1 AA")
+            end
         end
     end
 

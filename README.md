@@ -2,7 +2,7 @@
 
 The color schemes are optimized for *contrast*, meaning that the background and
 foreground have a color contrast of 15, the main colors and the background have
-a color contrast of 7, and the muted colors and the background have a color
+a color contrast of 7 or more, the muted colors and the background have a color
 contrast of 4.5 or more.
 
 The cards for each theme give a list of all the main colors (top row), muted

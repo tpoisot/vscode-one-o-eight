@@ -1,4 +1,3 @@
-
 function colorize!(theme)
     theme["shortcode"] = replace(theme["name"], "One O Eight " => "")
     for key in ["foreground", "background", "c1", "c2", "c3", "c4", "c5"]
@@ -10,7 +9,7 @@ function colorize!(theme)
 end
 
 function structure!(theme)
-    gr = range(theme["background"], theme["foreground"]; length = 7)[4:1:6]
+    gr = range(theme["background"], theme["foreground"]; length = 12)[8:1:10]
     for (i, g) in enumerate(gr)
         theme["g$(i)"] = g
     end
@@ -19,7 +18,7 @@ end
 
 function ui!(theme)
     idx = isequal("light")(theme["type"]) ? (3:7) : (2:6) 
-    endcolor = weighted_color_mean(0.65, theme["background"], theme["foreground"])
+    endcolor = weighted_color_mean(0.6, theme["background"], theme["foreground"])
     ui = range(theme["background"], endcolor; length = 8)[idx]
     for (i, u) in enumerate(ui)
         theme["u$(i)"] = u
@@ -27,7 +26,7 @@ function ui!(theme)
     return theme
 end
 
-function accents!(theme; w = 0.82)
+function accents!(theme; w = 0.79)
     if ~haskey(theme, "c2")
         theme["c2"] = weighted_color_mean(0.5, theme["c1"], theme["c3"])
     end
