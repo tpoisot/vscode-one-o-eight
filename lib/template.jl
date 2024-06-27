@@ -62,8 +62,8 @@ template = mt"""
         "button.hoverBackground": "{{c2}}",
         "button.foreground": "{{foreground}}",
         "button.border": "{{s2}}",
-        "dropdown.background": "{{u4}}",
-        "dropdown.listBackground": "{{u4}}",
+        "dropdown.background": "{{u3}}",
+        "dropdown.listBackground": "{{u3}}",
         "dropdown.border": "{{u4}}",
         "dropdown.foreground": "{{foreground}}"
 	},
