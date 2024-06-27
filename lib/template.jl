@@ -11,6 +11,7 @@ template = mt"""
         "editorLineNumber.activeForeground": "{{u5}}",
         "editorCursor.foreground": "{{s1}}",
         "foreground": "{{foreground}}",
+        "window.activeBorder": "{{u1}}",
         "list.highlightForeground": "{{foreground}}",
         "list.activeSelectionForeground": "{{foreground}}",
         "list.activeSelectionBackground": "{{u3}}",
@@ -56,7 +57,11 @@ template = mt"""
         "badge.foreground": "{{foreground}}",
         "badge.background": "{{s2}}",
         "input.background": "{{background}}",
-        "input.foreground": "{{foreground}}"
+        "input.foreground": "{{foreground}}",
+        "button.background": "{{s2}}",
+        "button.hoverBackground": "{{c2}}",
+        "button.foreground": "{{foreground}}",
+        "button.border": "{{s2}}"
 	},
 	"tokenColors": [
 		{
