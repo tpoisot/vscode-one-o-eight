@@ -23,6 +23,7 @@ include(joinpath(@__DIR__, "lib", "cardmaker.jl"))
 theme_files = readdir(joinpath(@__DIR__, "schemes"); join = true)
 
 for theme_file in theme_files
+    @info theme_file
     # Read the theme as a JSON file
     theme = JSON.parsefile(theme_file)
 
@@ -31,7 +32,8 @@ for theme_file in theme_files
     ui!(theme)
     accents!(theme)
 
-    theme_json = JSON.parse(render(template, template_data(theme)))
+    rendered = render(template, template_data(theme))
+    theme_json = JSON.parse(rendered)
     theme_output =
         joinpath(@__DIR__, "themes", replace(lowercase(theme["shortcode"]), " " => "-") * "-color-theme.json")
     open(theme_output, "w") do json_file

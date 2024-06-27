@@ -43,6 +43,8 @@ function cardmaker(theme)
     for ui_index in axes(u, 1)
         setcolor(u[ui_index])
         rect(Point((800 / 5) * (ui_index - 1), 320), 800 / 5, 40; action = :fill)
+        setcolor(theme["foreground"])
+        text("UI $(ui_index)", Point((800 / 5) * (ui_index - 1)+20, 320+10); halign = :left, valign = :top)
     end
 
     finish()

@@ -12,6 +12,8 @@ template = mt"""
         "editorCursor.foreground": "{{s1}}",
         "foreground": "{{foreground}}",
         "list.highlightForeground": "{{foreground}}",
+        "list.activeSelectionForeground": "{{foreground}}",
+        "list.activeSelectionBackground": "{{u3}}",
         "icon.foreground": "{{foreground}}",
         "activityBar.background": "{{u1}}",
         "activityBar.foreground": "{{foreground}}",
@@ -23,12 +25,16 @@ template = mt"""
         "statusBar.foreground": "{{foreground}}",
         "titleBar.activeBackground": "{{u1}}",
         "titleBar.inactiveBackground": "{{u1}}",
+        "titleBar.activeForeground": "{{foreground}}",
+        "titleBar.inactiveForeground": "{{foreground}}",
         "editorGroup.border": "{{u1}}",
         "editorGroupHeader.tabsBackground": "{{u1}}",
         "tab.unfocusedActiveBackground": "{{background}}",
         "tab.inactiveBackground": "{{u2}}",
         "tab.border": "{{u1}}",
         "tab.activeBorderTop": "{{s2}}",
+        "tab.activeForeground": "{{foreground}}",
+        "tab.inactiveForeground": "{{foreground}}",
         "editorGutter.modifiedBackground": "{{s2}}",
         "editorGutter.addedBackground": "{{s3}}",
         "editorGutter.deletedBackground": "{{s5}}",
@@ -48,7 +54,9 @@ template = mt"""
         "notebook.focusedCellBorder": "{{u1}}",
         "notebook.cellHoverBackground": "{{u1}}55",
         "badge.foreground": "{{foreground}}",
-        "badge.background": "{{s2}}"
+        "badge.background": "{{s2}}",
+        "input.background": "{{background}}",
+        "input.foreground": "{{foreground}}"
 	},
 	"tokenColors": [
 		{
@@ -260,7 +268,7 @@ template = mt"""
                 "fontStyle": "underline"
             }
         },
-        {
+        {        
             "name": "Markdown raw code",
             "scope": [
                 "markup.inline.raw.string.markdown"
