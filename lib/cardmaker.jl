@@ -1,7 +1,7 @@
 function cardmaker(theme)
-    Drawing(800, 360, joinpath(pwd(), "cards", replace(lowercase(theme["shortcode"]), " " => "-") * ".png"))
+    Drawing(1600, 720, joinpath(pwd(), "cards", replace(lowercase(theme["shortcode"]), " " => "-") * ".png"))
 
-    fontsize(18)
+    fontsize(36)
 
     fontvar = ["Neon", "Argon", "Xenon", "Radon", "Krypton"]
     fontwght = [" Light", " Medium", ""]
@@ -9,23 +9,24 @@ function cardmaker(theme)
     fontface(fontnm)
     background(theme["background"])
 
-    fontsize(24)
+    fontsize(48)
     setcolor(theme["foreground"])
     text(
         titlecase(theme["name"]) *
         " #$(hex(theme["foreground"])) / #$(hex(theme["background"]))",
-        Point(20, 20);
+        Point(40, 40);
         halign = :left,
         valign = :top,
     )
+    fontsize(40)
     text(
         fontnm,
-        Point(20, 50);
+        Point(40, 100);
         halign = :left,
         valign = :top,
     )
 
-    fontsize(20)
+    fontsize(40)
 
     c = [theme[c] for c in "c" .* string.(1:5)]
     s = [theme[c] for c in "s" .* string.(1:5)]
@@ -34,26 +35,23 @@ function cardmaker(theme)
 
     for (i, col) in enumerate(c)
         setcolor(col)
-        text("#$(hex(col))", Point(20 + (i - 1) * 150, 120); halign = :left, valign = :top)
+        text("#$(hex(col))", Point(40 + (i - 1) * 300, 240); halign = :left, valign = :top)
     end
     for (i, col) in enumerate(s)
         setcolor(col)
-        text("#$(hex(col))", Point(20 + (i - 1) * 150, 150); halign = :left, valign = :top)
+        text("#$(hex(col))", Point(40 + (i - 1) * 300, 300); halign = :left, valign = :top)
     end
     for (i, col) in enumerate(g)
         setcolor(col)
-        text("#$(hex(col))", Point(20 + (i - 1) * 150, 180); halign = :left, valign = :top)
+        text("#$(hex(col))", Point(40 + (i - 1) * 300, 360); halign = :left, valign = :top)
     end
 
-    fontsize(24)
+    fontsize(48)
     setcolor(theme["foreground"])
-    text("UI Colors", Point(20, 260); halign = :left, valign = :top)
 
     for ui_index in axes(u, 1)
         setcolor(u[ui_index])
-        rect(Point((800 / 5) * (ui_index - 1), 320), 800 / 5, 40; action = :fill)
-        setcolor(theme["foreground"])
-        text("UI $(ui_index)", Point((800 / 5) * (ui_index - 1)+20, 320+10); halign = :left, valign = :top)
+        rect(Point((1600 / 5) * (ui_index - 1), 550), 1600 / 5, 180; action = :fill)
     end
 
     finish()
