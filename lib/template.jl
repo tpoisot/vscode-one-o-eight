@@ -97,7 +97,19 @@ template = mt"""
         "quickInputList.focusForeground": "{{c2}}",
         "pickerGroup.border": "{{u4}}",
         "breadcrumb.foreground": "{{foreground}}",
-        "breadcrumb.background": "{{background}}"
+        "breadcrumb.background": "{{background}}",
+        "editorIndentGuide.activeBackground1": "{{u5}}33",
+        "editorIndentGuide.activeBackground2": "{{u5}}33",
+        "editorIndentGuide.activeBackground3": "{{u5}}33",
+        "editorIndentGuide.activeBackground4": "{{u5}}33",
+        "editorIndentGuide.activeBackground5": "{{u5}}33",
+        "editorIndentGuide.activeBackground6": "{{u5}}33",
+        "editorIndentGuide.background1": "{{u2}}66",
+        "editorIndentGuide.background2": "{{u2}}66",
+        "editorIndentGuide.background3": "{{u2}}66",
+        "editorIndentGuide.background4": "{{u2}}66",
+        "editorIndentGuide.background5": "{{u2}}66",
+        "editorIndentGuide.background6": "{{u2}}66"
 	},
 	"tokenColors": [
 		{
