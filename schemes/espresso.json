@@ -1,11 +1,11 @@
 {
     "name": "One O Eight Espresso",
     "type": "dark",
-    "background": "#3C2614",
-    "foreground": "#F7F2EE",
-    "c1": "#CCA8EB",
+    "background": "#363031",
+    "foreground": "#E9E2DB",
+    "c1": "#D7B5F3",
     "c2": "#B0C0E4",
-    "c3": "#9EC585",
-    "c4": "#E6B483",
-    "c5": "#E7ACB4"
+    "c3": "#B3CEA1",
+    "c4": "#E8BC8F",
+    "c5": "#E7B7B6"
 }
