@@ -12,18 +12,18 @@ variant and weight of the font.
 
 ## Core themes
 
-![](cards/light.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/light.png)
 
-![](cards/dark.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/dark.png)
 
 ## Additional themes
 
-![](cards/forest.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/forest.png)
 
-![](cards/bright.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/bright.png)
 
-![](cards/black.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/black.png)
 
-![](cards/aubergine.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/aubergine.png)
 
-![](cards/espresso.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/espresso.png)
