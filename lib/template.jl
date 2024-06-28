@@ -27,7 +27,10 @@ template = mt"""
         "editor.findMatchBackground": "{{s4}}66",
         "editor.findMatchHighlightBackground": "{{s4}}33",
         "editor.findRangeHighlightBackground": "{{s4}}10",
-        "editorStickyScroll.shadow": "{{u1}}66",
+        "editorStickyScroll.shadow": "{{u2}}66",
+        "scrollbar.shadow": "{{u2}}66",
+        "panelStickyScroll.shadow": "{{u2}}66",
+        "widgetStickyScroll.shadow": "{{u2}}66",
         "editorCursor.foreground": "{{s1}}",
         "editorGroup.border": "{{u1}}",
         "editorGroupHeader.tabsBackground": "{{u1}}",
@@ -92,7 +95,9 @@ template = mt"""
         "quickInput.foreground": "{{foreground}}",
         "quickInputList.focusBackground": "{{u2}}",
         "quickInputList.focusForeground": "{{c2}}",
-        "pickerGroup.border": "{{u4}}"
+        "pickerGroup.border": "{{u4}}",
+        "breadcrumb.foreground": "{{foreground}}",
+        "breadcrumb.background": "{{background}}"
 	},
 	"tokenColors": [
 		{
