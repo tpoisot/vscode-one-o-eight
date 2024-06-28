@@ -217,7 +217,7 @@ template = mt"""
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "{{s1}}"
+                "foreground": "{{s5}}"
             }
         },
         {
