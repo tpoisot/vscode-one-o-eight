@@ -3,9 +3,7 @@ function cardmaker(theme)
 
     fontsize(36)
 
-    fontvar = ["Neon", "Argon", "Xenon", "Radon", "Krypton"]
-    fontwght = [" Light", " Medium", ""]
-    fontnm = "Monaspace $(rand(fontvar))$(rand(fontwght))"
+    fontnm = "Monaspace Argon"
     fontface(fontnm)
     background(theme["background"])
 
@@ -43,7 +41,7 @@ function cardmaker(theme)
     end
     for (i, col) in enumerate(g)
         setcolor(col)
-        text("#$(hex(col))", Point(40 + (i - 1) * 300, 360); halign = :left, valign = :top)
+        text("#$(hex(col))", Point(40 + 2(i - 1) * 300, 360); halign = :left, valign = :top)
     end
 
     fontsize(48)

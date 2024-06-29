@@ -10,6 +10,13 @@ ispath("cards") || mkpath("cards")
 # Load the main Mustache template
 include(joinpath(@__DIR__, "lib", "template.jl"))
 
+# Check the color use
+println("--> QA/QC for the template")
+tmp_str = string(template)
+for colorcode in vcat("u".*string.(1:5), "s".*string.(1:5), "c".*string.(1:5), "g".*string.(1:3))
+    occursin(tmp_str, "{{$colorcode}}") && println("\t /!\\ $(colorcode) not used")
+end
+
 # Load the color functions
 include(joinpath(@__DIR__, "lib", "colorspace.jl"))
 
@@ -32,7 +39,7 @@ for theme_file in theme_files
     accents!(theme)
 
     # Info messages
-    println("#### Checking contrast for theme $(theme["name"])")
+    println("--> QA/QC for theme $(theme["name"])")
     for color_idx in 1:5
         c_contrast = contrast(theme["background"], theme["c$(color_idx)"])
         s_contrast = contrast(theme["background"], theme["s$(color_idx)"])    
