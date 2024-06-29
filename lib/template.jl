@@ -109,7 +109,15 @@ template = mt"""
         "editorIndentGuide.background3": "{{u2}}66",
         "editorIndentGuide.background4": "{{u2}}66",
         "editorIndentGuide.background5": "{{u2}}66",
-        "editorIndentGuide.background6": "{{u2}}66"
+        "editorIndentGuide.background6": "{{u2}}66",
+        "terminal.background": "{{background}}",
+        "terminal.border": "{{u1}}",
+        "terminal.tab.activeBorder": "{{c1}}",
+        "terminal.foreground": "{{foreground}}",
+        "terminalCursor.foreground": "{{foreground}}",
+        "terminalCursor.background": "{{c1}}66",
+        "panelTitle.activeForeground": "{{u5}}",
+        "panelTitle.inactiveForeground": "{{u4}}"
 	},
 	"tokenColors": [
 		{

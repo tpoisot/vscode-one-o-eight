@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/tpoisot/vscode-one-o-eight.git"
     },
-    "version": "0.0.16",
+    "version": "0.0.17",
     "engines": {
         "vscode": "^1.53.0"
     },
@@ -33,11 +33,6 @@
                 "path": "./themes/black-color-theme.json"
             },
             {
-                "label": "One O Eight Forest",
-                "uiTheme": "vs",
-                "path": "./themes/forest-color-theme.json"
-            },
-            {
                 "label": "One O Eight Aubergine",
                 "uiTheme": "vs",
                 "path": "./themes/aubergine-color-theme.json"
@@ -48,9 +43,14 @@
                 "path": "./themes/bright-color-theme.json"
             },
             {
-                "label": "One O Eight Espresso",
+                "label": "One O Eight Cafecito",
                 "uiTheme": "vs",
-                "path": "./themes/espresso-color-theme.json"
+                "path": "./themes/cafecito-color-theme.json"
+            },
+            {
+                "label": "One O Eight Flat White",
+                "uiTheme": "vs",
+                "path": "./themes/flat-white-color-theme.json"
             }
         ]
     }

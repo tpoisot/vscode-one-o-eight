@@ -10,20 +10,24 @@ colors (middle row), and colors of the UI elements (boxes). The cards are set in
 [Monaspace](https://monaspace.githubnext.com/) 18, and each card uses a random
 variant and weight of the font.
 
-## Core themes
+## Basic themes
 
 ![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/light.png)
 
 ![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/dark.png)
 
-## Additional themes
-
-![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/forest.png)
+## More contrast
 
 ![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/bright.png)
 
 ![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/black.png)
 
-![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/aubergine.png)
+## Coffee break edition
 
-![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/espresso.png)
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/cafecito.png)
+
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/flat-white.png)
+
+## Collector's items
+
+![](https://raw.githubusercontent.com/tpoisot/vscode-one-o-eight/main/cards/aubergine.png)
